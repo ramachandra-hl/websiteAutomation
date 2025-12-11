@@ -17,7 +17,21 @@ import java.util.Random;
 public class Utilities {
 
     private static final Logger logger = LoggerFactory.getLogger(Utilities.class);
-    private static final Dotenv dotenv = Dotenv.configure().ignoreIfMissing().load();
+    private static final Dotenv dotenv = loadDotenv();
+
+    private static Dotenv loadDotenv() {
+        Dotenv base = Dotenv.configure().ignoreIfMissing().load();
+        String envName = base.get("ENVIRONMENT", "preProd").toLowerCase();
+        String filename = envName.equals("prod") ? ".env.prod" : ".env.preprod";
+
+        try {
+            if (Files.exists(Paths.get(filename))) {
+                return Dotenv.configure().ignoreIfMissing().filename(filename).load();
+            }
+        } catch (Exception ignored) {}
+
+        return base;
+    }
 
     /**
      * Adds properties from a file to the test data map

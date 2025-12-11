@@ -4692,3 +4692,1875 @@ Session ID: 835965d952b06767abaf021601952f23
 2025-11-29 17:08:48.615 [main] INFO  tests.BannerSignInTest - Browser closed successfully
 2025-11-29 17:08:48.616 [main] INFO  tests.BannerSignInTest - ========== Test Execution Ended ==========
 
+2025-12-11 09:58:20.404 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 09:58:20.503 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 09:58:20.503 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 09:58:33.347 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 09:58:33.374 [main] INFO  tests.BannerSignInTest - Current URL: https://www.homelane.com/
+2025-12-11 09:58:33.438 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 09:58:33.443 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 09:58:33.443 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 09:58:33.480 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 09:58:33.488 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 09:58:33.494 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 09:58:33.508 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 09:58:33.510 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 09:58:33.513 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 09:58:33.521 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6075036182
+2025-12-11 09:58:33.521 [main] INFO  tests.BannerSignInTest - Using phone number: 6075036182
+2025-12-11 09:58:33.521 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 09:58:33.521 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 09:58:33.521 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 09:58:34.286 [main] INFO  pageObject.BannerFormPage - Name entered successfully
+2025-12-11 09:58:34.286 [main] INFO  pageObject.BannerFormPage - Entering mobile number: 6075036182
+2025-12-11 09:58:34.754 [main] INFO  pageObject.BannerFormPage - Mobile number entered successfully
+2025-12-11 09:58:34.754 [main] INFO  pageObject.BannerFormPage - Selecting property location
+2025-12-11 09:58:34.997 [main] INFO  pageObject.BannerFormPage - Property location dropdown clicked
+2025-12-11 09:58:35.270 [main] INFO  pageObject.BannerFormPage - City option selected successfully
+2025-12-11 09:58:35.282 [main] INFO  pageObject.BannerFormPage - Clicking Book 3D Design Session button
+2025-12-11 09:58:35.490 [main] INFO  pageObject.BannerFormPage - Book session button clicked successfully
+2025-12-11 09:58:35.490 [main] INFO  pageObject.BannerFormPage - Entering OTP: 4783
+2025-12-11 09:58:38.018 [main] INFO  pageObject.BannerFormPage - OTP entered successfully
+2025-12-11 09:58:38.018 [main] INFO  pageObject.BannerFormPage - Clicking Submit button
+2025-12-11 09:58:38.316 [main] INFO  pageObject.BannerFormPage - Submit button clicked successfully
+2025-12-11 09:58:38.316 [main] INFO  pageObject.BannerFormPage - Banner form fill process completed
+2025-12-11 09:58:38.316 [main] INFO  tests.BannerSignInTest - Step 1: Banner form filled successfully
+2025-12-11 09:58:38.316 [main] INFO  tests.BannerSignInTest - Step 2: Filling property details
+2025-12-11 09:58:38.316 [main] INFO  pageObject.PropertyDetailsPage - Starting property details fill process
+2025-12-11 09:58:38.316 [main] INFO  pageObject.PropertyDetailsPage - Selecting Apartment option
+2025-12-11 09:58:58.374 [main] ERROR pageObject.PropertyDetailsPage - Failed to select apartment: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'BFC_flowSteps_listOf_house__3_f_E')]//p[normalize-space()='Apartment']/parent::div' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'BFC_flowSteps_listOf_house__3_f_E')]//p[normalize-space()='Apartment']/parent::div' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObject.PropertyDetailsPage.selectApartment(PropertyDetailsPage.java:54)
+	at pageObject.PropertyDetailsPage.fillPropertyDetails(PropertyDetailsPage.java:158)
+	at tests.BannerSignInTest.bannerPageSignInTest(BannerSignInTest.java:81)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'BFC_flowSteps_listOf_house__3_f_E')]//p[normalize-space()='Apartment']/parent::div"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [190ad6829990a5f9c9128cb3af91b07e, findElement {using=xpath, value=//div[contains(@class,'BFC_flowSteps_listOf_house__3_f_E')]//p[normalize-space()='Apartment']/parent::div}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52982}, goog:processID: 13592, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52982/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 190ad6829990a5f9c9128cb3af91b07e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 common frames omitted
+2025-12-11 09:58:58.376 [main] INFO  tests.BannerSignInTest - Cleaning up and closing browser
+2025-12-11 09:58:58.606 [main] INFO  tests.BannerSignInTest - Browser closed successfully
+2025-12-11 09:58:58.606 [main] INFO  tests.BannerSignInTest - ========== Test Execution Ended ==========
+
+2025-12-11 10:00:45.625 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 10:00:45.669 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 10:00:45.669 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 10:00:49.849 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 10:00:49.869 [main] INFO  tests.BannerSignInTest - Current URL: https://www.homelane.com/
+2025-12-11 10:00:49.892 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 10:00:49.894 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 10:00:49.895 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 10:00:49.941 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 10:00:49.947 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 10:00:49.952 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 10:00:49.956 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 10:00:49.956 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 10:00:49.961 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 10:00:49.966 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6043705729
+2025-12-11 10:00:49.968 [main] INFO  tests.BannerSignInTest - Using phone number: 6043705729
+2025-12-11 10:00:49.968 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 10:00:49.968 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 10:00:49.968 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 10:00:50.421 [main] INFO  pageObject.BannerFormPage - Name entered successfully
+2025-12-11 10:00:50.421 [main] INFO  pageObject.BannerFormPage - Entering mobile number: 6043705729
+2025-12-11 10:00:50.899 [main] INFO  pageObject.BannerFormPage - Mobile number entered successfully
+2025-12-11 10:00:50.899 [main] INFO  pageObject.BannerFormPage - Selecting property location
+2025-12-11 10:00:51.101 [main] INFO  pageObject.BannerFormPage - Property location dropdown clicked
+2025-12-11 10:00:51.389 [main] INFO  pageObject.BannerFormPage - City option selected successfully
+2025-12-11 10:00:51.389 [main] INFO  pageObject.BannerFormPage - Clicking Book 3D Design Session button
+2025-12-11 10:00:51.570 [main] INFO  pageObject.BannerFormPage - Book session button clicked successfully
+2025-12-11 10:00:51.570 [main] INFO  pageObject.BannerFormPage - Entering OTP: 3692
+2025-12-11 10:00:53.841 [main] INFO  pageObject.BannerFormPage - OTP entered successfully
+2025-12-11 10:00:53.843 [main] INFO  pageObject.BannerFormPage - Clicking Submit button
+2025-12-11 10:00:54.091 [main] INFO  pageObject.BannerFormPage - Submit button clicked successfully
+2025-12-11 10:00:54.091 [main] INFO  pageObject.BannerFormPage - Banner form fill process completed
+2025-12-11 10:00:54.091 [main] INFO  tests.BannerSignInTest - Step 1: Banner form filled successfully
+2025-12-11 10:00:54.091 [main] INFO  tests.BannerSignInTest - Step 2: Filling property details
+2025-12-11 10:00:54.091 [main] INFO  pageObject.PropertyDetailsPage - Starting property details fill process
+2025-12-11 10:00:54.091 [main] INFO  pageObject.PropertyDetailsPage - Selecting Apartment option
+2025-12-11 10:01:22.808 [main] INFO  pageObject.PropertyDetailsPage - Apartment option selected successfully
+2025-12-11 10:01:22.808 [main] INFO  pageObject.PropertyDetailsPage - Selecting 2BHK option
+2025-12-11 10:01:23.033 [main] INFO  pageObject.PropertyDetailsPage - 2BHK option selected successfully
+2025-12-11 10:01:23.033 [main] INFO  pageObject.PropertyDetailsPage - Searching for property: TestYantra Software Solutions, Somajiguda, Hyderabad, Telangana, India
+2025-12-11 10:01:23.192 [main] INFO  pageObject.PropertyDetailsPage - Property search area clicked
+2025-12-11 10:01:25.440 [main] INFO  pageObject.PropertyDetailsPage - Property name entered in search box
+2025-12-11 10:01:27.568 [main] INFO  pageObject.PropertyDetailsPage - Property selected from search results
+2025-12-11 10:01:27.568 [main] INFO  pageObject.PropertyDetailsPage - Clicking Next button
+2025-12-11 10:01:28.322 [main] INFO  pageObject.PropertyDetailsPage - Next button clicked successfully
+2025-12-11 10:01:28.322 [main] INFO  pageObject.PropertyDetailsPage - Waiting for page transition (5 seconds)
+2025-12-11 10:01:33.343 [main] INFO  pageObject.PropertyDetailsPage - Page transition wait completed
+2025-12-11 10:01:33.343 [main] INFO  pageObject.PropertyDetailsPage - Property details fill process completed
+2025-12-11 10:01:33.343 [main] INFO  tests.BannerSignInTest - Step 2: Property details filled successfully
+2025-12-11 10:01:33.343 [main] INFO  tests.BannerSignInTest - Step 3: Filling planning options
+2025-12-11 10:01:33.343 [main] INFO  pageObject.PlanningOptionsPage - Starting planning options fill process
+2025-12-11 10:01:33.343 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'Rent Out' option
+2025-12-11 10:01:33.598 [main] INFO  pageObject.PlanningOptionsPage - 'Rent Out' option selected successfully
+2025-12-11 10:01:33.598 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'End-to-end Interiors' option
+2025-12-11 10:01:33.849 [main] INFO  pageObject.PlanningOptionsPage - 'End-to-end Interiors' option selected successfully
+2025-12-11 10:01:33.849 [main] INFO  pageObject.PlanningOptionsPage - Selecting budget option
+2025-12-11 10:01:34.007 [main] INFO  pageObject.PlanningOptionsPage - Budget dropdown clicked
+2025-12-11 10:01:34.281 [main] INFO  pageObject.PlanningOptionsPage - Budget option selected successfully
+2025-12-11 10:01:34.282 [main] INFO  pageObject.PlanningOptionsPage - Selecting possession option
+2025-12-11 10:01:34.475 [main] INFO  pageObject.PlanningOptionsPage - Possession dropdown clicked
+2025-12-11 10:01:34.664 [main] INFO  pageObject.PlanningOptionsPage - Possession option selected successfully
+2025-12-11 10:01:34.664 [main] INFO  pageObject.PlanningOptionsPage - Clicking Next button
+2025-12-11 10:01:34.882 [main] INFO  pageObject.PlanningOptionsPage - Next button clicked successfully
+2025-12-11 10:01:34.882 [main] INFO  pageObject.PlanningOptionsPage - Planning options fill process completed
+2025-12-11 10:01:34.886 [main] INFO  tests.BannerSignInTest - Step 3: Planning options filled successfully
+2025-12-11 10:01:34.886 [main] INFO  tests.BannerSignInTest - Step 4: Scheduling meeting
+2025-12-11 10:01:34.886 [main] INFO  utilis.Utilities - Generated tomorrow's date: 12-12-2025
+2025-12-11 10:01:34.888 [main] INFO  tests.BannerSignInTest - Using tomorrow's date: 12-12-2025
+2025-12-11 10:01:34.888 [main] INFO  pageObject.MeetingSchedulePage - Starting meeting scheduling process
+2025-12-11 10:01:34.888 [main] INFO  pageObject.MeetingSchedulePage - Selecting experience centre
+2025-12-11 10:01:55.002 [main] ERROR pageObject.MeetingSchedulePage - Failed to select experience centre: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='BFC_flowSteps_selectOption_section__32fyK' and contains(., 'Select Experience Centre')]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='BFC_flowSteps_selectOption_section__32fyK' and contains(., 'Select Experience Centre')]' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObject.MeetingSchedulePage.selectExperienceCentre(MeetingSchedulePage.java:68)
+	at pageObject.MeetingSchedulePage.scheduleMeeting(MeetingSchedulePage.java:232)
+	at tests.BannerSignInTest.bannerPageSignInTest(BannerSignInTest.java:93)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='BFC_flowSteps_selectOption_section__32fyK' and contains(., 'Select Experience Centre')]"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f891a75c68238358bd16ff6751b47e1f, findElement {using=xpath, value=//div[@class='BFC_flowSteps_selectOption_section__32fyK' and contains(., 'Select Experience Centre')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56518}, goog:processID: 20508, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56518/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f891a75c68238358bd16ff6751b47e1f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 common frames omitted
+2025-12-11 10:01:55.043 [main] INFO  tests.BannerSignInTest - Cleaning up and closing browser
+2025-12-11 10:01:55.301 [main] INFO  tests.BannerSignInTest - Browser closed successfully
+2025-12-11 10:01:55.301 [main] INFO  tests.BannerSignInTest - ========== Test Execution Ended ==========
+
+2025-12-11 10:32:27.455 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 10:32:27.503 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 10:32:27.503 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 10:32:31.445 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 10:32:31.462 [main] INFO  tests.BannerSignInTest - Current URL: https://www.homelane.com/
+2025-12-11 10:32:31.494 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 10:32:31.501 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 10:32:31.501 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 10:32:31.556 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 10:32:31.556 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 10:32:31.574 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 10:32:31.584 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 10:32:31.584 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 10:32:31.589 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 10:32:31.612 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6076458558
+2025-12-11 10:32:31.612 [main] INFO  tests.BannerSignInTest - Using phone number: 6076458558
+2025-12-11 10:32:31.612 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 10:32:31.612 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 10:32:31.612 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 10:32:51.831 [main] ERROR pageObject.BannerFormPage - Failed to enter name: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: #bfc-form-container input[placeholder='Enter your name']' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: #bfc-form-container input[placeholder='Enter your name']' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObject.BannerFormPage.enterName(BannerFormPage.java:53)
+	at pageObject.BannerFormPage.fillBannerForm(BannerFormPage.java:130)
+	at tests.BannerSignInTest.bannerPageSignInTest(BannerSignInTest.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#bfc-form-container input[placeholder='Enter your name']"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8f9a39991c676c618504b4ef87a80172, findElement {value=#bfc-form-container input[placeholder='Enter your name'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53530}, goog:processID: 11940, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53530/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f9a39991c676c618504b4ef87a80172
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 common frames omitted
+2025-12-11 10:32:51.887 [main] INFO  tests.BannerSignInTest - Cleaning up and closing browser
+2025-12-11 10:32:52.196 [main] INFO  tests.BannerSignInTest - Browser closed successfully
+2025-12-11 10:32:52.196 [main] INFO  tests.BannerSignInTest - ========== Test Execution Ended ==========
+
+2025-12-11 10:33:09.772 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 10:33:09.814 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 10:33:09.814 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 10:33:13.699 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 10:33:13.730 [main] INFO  tests.BannerSignInTest - Current URL: https://www.homelane.com/
+2025-12-11 10:33:13.756 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 10:33:13.761 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 10:33:13.761 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 10:33:13.817 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 10:33:13.828 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 10:33:13.836 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 10:33:13.842 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 10:33:13.842 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 10:33:13.851 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 10:33:13.866 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6001802248
+2025-12-11 10:33:13.866 [main] INFO  tests.BannerSignInTest - Using phone number: 6001802248
+2025-12-11 10:33:13.866 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 10:33:13.866 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 10:33:13.869 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 10:33:14.879 [main] INFO  pageObject.BannerFormPage - Name entered successfully
+2025-12-11 10:33:14.879 [main] INFO  pageObject.BannerFormPage - Entering mobile number: 6001802248
+2025-12-11 10:33:15.737 [main] INFO  pageObject.BannerFormPage - Mobile number entered successfully
+2025-12-11 10:33:15.741 [main] INFO  pageObject.BannerFormPage - Selecting property location
+2025-12-11 10:33:16.421 [main] INFO  pageObject.BannerFormPage - Property location dropdown clicked
+2025-12-11 10:33:17.156 [main] INFO  pageObject.BannerFormPage - City option selected successfully
+2025-12-11 10:33:17.157 [main] INFO  pageObject.BannerFormPage - Clicking Book 3D Design Session button
+2025-12-11 10:33:17.674 [main] INFO  pageObject.BannerFormPage - Book session button clicked successfully
+2025-12-11 10:33:17.676 [main] INFO  pageObject.BannerFormPage - Entering OTP: 4783
+2025-12-11 10:33:20.268 [main] INFO  pageObject.BannerFormPage - OTP entered successfully
+2025-12-11 10:33:20.268 [main] INFO  pageObject.BannerFormPage - Clicking Submit button
+2025-12-11 10:33:20.730 [main] INFO  pageObject.BannerFormPage - Submit button clicked successfully
+2025-12-11 10:33:20.731 [main] INFO  pageObject.BannerFormPage - Banner form fill process completed
+2025-12-11 10:33:20.731 [main] INFO  tests.BannerSignInTest - Step 1: Banner form filled successfully
+2025-12-11 10:33:20.731 [main] INFO  tests.BannerSignInTest - Step 2: Filling property details
+2025-12-11 10:33:20.731 [main] INFO  pageObject.PropertyDetailsPage - Starting property details fill process
+2025-12-11 10:33:20.731 [main] INFO  pageObject.PropertyDetailsPage - Selecting Apartment option
+2025-12-11 10:33:43.615 [main] ERROR pageObject.PropertyDetailsPage - Failed to select apartment: Error communicating with the remote browser. It may have died.
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ac2be8577c7bf68565be27ac9a00c9d, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65446}, goog:processID: 21832, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65446/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ac2be8577c7bf68565be27ac9a00c9d
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ac2be8577c7bf68565be27ac9a00c9d, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65446}, goog:processID: 21832, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65446/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ac2be8577c7bf68565be27ac9a00c9d
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4465)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:669)
+	at java.base/java.lang.String.valueOf(String.java:4465)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+	at pageObject.PropertyDetailsPage.selectApartment(PropertyDetailsPage.java:54)
+	at pageObject.PropertyDetailsPage.fillPropertyDetails(PropertyDetailsPage.java:158)
+	at tests.BannerSignInTest.bannerPageSignInTest(BannerSignInTest.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:496)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:970)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
+	... 9 common frames omitted
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:412)
+	at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	... 3 common frames omitted
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1477)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1422)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1422)
+2025-12-11 10:33:43.687 [main] INFO  tests.BannerSignInTest - Cleaning up and closing browser
+2025-12-11 10:33:43.716 [main] INFO  tests.BannerSignInTest - Browser closed successfully
+2025-12-11 10:33:43.716 [main] INFO  tests.BannerSignInTest - ========== Test Execution Ended ==========
+
+2025-12-11 10:36:28.919 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 10:36:28.966 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 10:36:28.966 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 10:36:32.610 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 10:36:32.635 [main] INFO  tests.BannerSignInTest - Current URL: https://www.homelane.com/
+2025-12-11 10:36:32.641 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 10:36:32.657 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 10:36:32.657 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 10:36:32.705 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 10:36:32.709 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 10:36:32.726 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 10:36:32.730 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 10:36:32.730 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 10:36:32.730 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 10:36:32.745 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6046584280
+2025-12-11 10:36:32.745 [main] INFO  tests.BannerSignInTest - Using phone number: 6046584280
+2025-12-11 10:36:32.745 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 10:36:32.745 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 10:36:32.745 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 10:36:33.742 [main] INFO  pageObject.BannerFormPage - Name entered successfully
+2025-12-11 10:36:33.742 [main] INFO  pageObject.BannerFormPage - Entering mobile number: 6046584280
+2025-12-11 10:36:34.527 [main] INFO  pageObject.BannerFormPage - Mobile number entered successfully
+2025-12-11 10:36:34.527 [main] INFO  pageObject.BannerFormPage - Selecting property location
+2025-12-11 10:36:35.026 [main] INFO  pageObject.BannerFormPage - Property location dropdown clicked
+2025-12-11 10:36:36.677 [main] INFO  pageObject.BannerFormPage - City option selected successfully
+2025-12-11 10:36:36.677 [main] INFO  pageObject.BannerFormPage - Clicking Book 3D Design Session button
+2025-12-11 10:36:37.130 [main] INFO  pageObject.BannerFormPage - Book session button clicked successfully
+2025-12-11 10:36:37.130 [main] INFO  pageObject.BannerFormPage - Entering OTP: 3692
+2025-12-11 10:36:39.797 [main] INFO  pageObject.BannerFormPage - OTP entered successfully
+2025-12-11 10:36:39.797 [main] INFO  pageObject.BannerFormPage - Clicking Submit button
+2025-12-11 10:36:40.314 [main] INFO  pageObject.BannerFormPage - Submit button clicked successfully
+2025-12-11 10:36:40.314 [main] INFO  pageObject.BannerFormPage - Banner form fill process completed
+2025-12-11 10:36:40.314 [main] INFO  tests.BannerSignInTest - Step 1: Banner form filled successfully
+2025-12-11 10:36:40.314 [main] INFO  tests.BannerSignInTest - Step 2: Filling property details
+2025-12-11 10:36:40.324 [main] INFO  pageObject.PropertyDetailsPage - Starting property details fill process
+2025-12-11 10:36:40.325 [main] INFO  pageObject.PropertyDetailsPage - Selecting Apartment option
+2025-12-11 10:37:05.876 [main] INFO  pageObject.PropertyDetailsPage - Apartment option selected successfully
+2025-12-11 10:37:05.876 [main] INFO  pageObject.PropertyDetailsPage - Selecting 2BHK option
+2025-12-11 10:37:06.368 [main] INFO  pageObject.PropertyDetailsPage - 2BHK option selected successfully
+2025-12-11 10:37:06.368 [main] INFO  pageObject.PropertyDetailsPage - Searching for property: TestYantra Software Solutions, Somajiguda, Hyderabad, Telangana, India
+2025-12-11 10:37:06.984 [main] INFO  pageObject.PropertyDetailsPage - Property search area clicked
+2025-12-11 10:37:09.769 [main] INFO  pageObject.PropertyDetailsPage - Property name entered in search box
+2025-12-11 10:37:12.142 [main] INFO  pageObject.PropertyDetailsPage - Property selected from search results
+2025-12-11 10:37:12.146 [main] INFO  pageObject.PropertyDetailsPage - Clicking Next button
+2025-12-11 10:37:12.652 [main] INFO  pageObject.PropertyDetailsPage - Next button clicked successfully
+2025-12-11 10:37:12.652 [main] INFO  pageObject.PropertyDetailsPage - Waiting for page transition (5 seconds)
+2025-12-11 10:37:17.667 [main] INFO  pageObject.PropertyDetailsPage - Page transition wait completed
+2025-12-11 10:37:17.667 [main] INFO  pageObject.PropertyDetailsPage - Property details fill process completed
+2025-12-11 10:37:17.667 [main] INFO  tests.BannerSignInTest - Step 2: Property details filled successfully
+2025-12-11 10:37:17.667 [main] INFO  tests.BannerSignInTest - Step 3: Filling planning options
+2025-12-11 10:37:17.667 [main] INFO  pageObject.PlanningOptionsPage - Starting planning options fill process
+2025-12-11 10:37:17.667 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'Rent Out' option
+2025-12-11 10:37:18.303 [main] INFO  pageObject.PlanningOptionsPage - 'Rent Out' option selected successfully
+2025-12-11 10:37:18.303 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'End-to-end Interiors' option
+2025-12-11 10:37:18.872 [main] INFO  pageObject.PlanningOptionsPage - 'End-to-end Interiors' option selected successfully
+2025-12-11 10:37:18.872 [main] INFO  pageObject.PlanningOptionsPage - Selecting budget option
+2025-12-11 10:37:19.459 [main] INFO  pageObject.PlanningOptionsPage - Budget dropdown clicked
+2025-12-11 10:37:20.100 [main] INFO  pageObject.PlanningOptionsPage - Budget option selected successfully
+2025-12-11 10:37:20.100 [main] INFO  pageObject.PlanningOptionsPage - Selecting possession option
+2025-12-11 10:37:20.492 [main] INFO  pageObject.PlanningOptionsPage - Possession dropdown clicked
+2025-12-11 10:37:20.960 [main] INFO  pageObject.PlanningOptionsPage - Possession option selected successfully
+2025-12-11 10:37:20.960 [main] INFO  pageObject.PlanningOptionsPage - Clicking Next button
+2025-12-11 10:37:21.439 [main] INFO  pageObject.PlanningOptionsPage - Next button clicked successfully
+2025-12-11 10:37:21.439 [main] INFO  pageObject.PlanningOptionsPage - Planning options fill process completed
+2025-12-11 10:37:21.439 [main] INFO  tests.BannerSignInTest - Step 3: Planning options filled successfully
+2025-12-11 10:37:21.439 [main] INFO  tests.BannerSignInTest - Step 4: Scheduling meeting
+2025-12-11 10:37:21.439 [main] INFO  utilis.Utilities - Generated tomorrow's date: 12-12-2025
+2025-12-11 10:37:21.439 [main] INFO  tests.BannerSignInTest - Using tomorrow's date: 12-12-2025
+2025-12-11 10:37:21.439 [main] INFO  pageObject.MeetingSchedulePage - Starting meeting scheduling process
+2025-12-11 10:37:21.439 [main] INFO  pageObject.MeetingSchedulePage - Selecting experience centre
+2025-12-11 10:37:41.659 [main] ERROR pageObject.MeetingSchedulePage - Failed to select experience centre: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='BFC_flowSteps_selectOption_section__32fyK' and contains(., 'Select Experience Centre')]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='BFC_flowSteps_selectOption_section__32fyK' and contains(., 'Select Experience Centre')]' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObject.MeetingSchedulePage.selectExperienceCentre(MeetingSchedulePage.java:68)
+	at pageObject.MeetingSchedulePage.scheduleMeeting(MeetingSchedulePage.java:232)
+	at tests.BannerSignInTest.bannerPageSignInTest(BannerSignInTest.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='BFC_flowSteps_selectOption_section__32fyK' and contains(., 'Select Experience Centre')]"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bf83e2a3d0167bec1f2c119d5a8c09aa, findElement {value=//div[@class='BFC_flowSteps_selectOption_section__32fyK' and contains(., 'Select Experience Centre')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52347}, goog:processID: 22608, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52347/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf83e2a3d0167bec1f2c119d5a8c09aa
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 common frames omitted
+2025-12-11 10:37:41.717 [main] INFO  tests.BannerSignInTest - Cleaning up and closing browser
+2025-12-11 10:37:42.109 [main] INFO  tests.BannerSignInTest - Browser closed successfully
+2025-12-11 10:37:42.109 [main] INFO  tests.BannerSignInTest - ========== Test Execution Ended ==========
+
+2025-12-11 10:38:37.546 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 10:38:37.578 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 10:38:37.578 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 10:38:42.072 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 10:38:42.088 [main] INFO  tests.BannerSignInTest - Current URL: https://website-preprod.homelane.com/
+2025-12-11 10:38:42.120 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 10:38:42.125 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 10:38:42.125 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 10:38:42.189 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 10:38:42.189 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 10:38:42.208 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 10:38:42.217 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 10:38:42.221 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 10:38:42.226 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 10:38:42.244 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6033693782
+2025-12-11 10:38:42.244 [main] INFO  tests.BannerSignInTest - Using phone number: 6033693782
+2025-12-11 10:38:42.244 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 10:38:42.244 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 10:38:42.244 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 10:38:43.135 [main] INFO  pageObject.BannerFormPage - Name entered successfully
+2025-12-11 10:38:43.135 [main] INFO  pageObject.BannerFormPage - Entering mobile number: 6033693782
+2025-12-11 10:38:43.941 [main] INFO  pageObject.BannerFormPage - Mobile number entered successfully
+2025-12-11 10:38:43.941 [main] INFO  pageObject.BannerFormPage - Selecting property location
+2025-12-11 10:38:44.300 [main] INFO  pageObject.BannerFormPage - Property location dropdown clicked
+2025-12-11 10:38:45.352 [main] INFO  pageObject.BannerFormPage - City option selected successfully
+2025-12-11 10:38:45.354 [main] INFO  pageObject.BannerFormPage - Clicking Book 3D Design Session button
+2025-12-11 10:38:45.914 [main] INFO  pageObject.BannerFormPage - Book session button clicked successfully
+2025-12-11 10:38:45.914 [main] INFO  pageObject.BannerFormPage - Entering OTP: 6633
+2025-12-11 10:38:48.310 [main] INFO  pageObject.BannerFormPage - OTP entered successfully
+2025-12-11 10:38:48.310 [main] INFO  pageObject.BannerFormPage - Clicking Submit button
+2025-12-11 10:38:48.742 [main] INFO  pageObject.BannerFormPage - Submit button clicked successfully
+2025-12-11 10:38:48.742 [main] INFO  pageObject.BannerFormPage - Banner form fill process completed
+2025-12-11 10:38:48.742 [main] INFO  tests.BannerSignInTest - Step 1: Banner form filled successfully
+2025-12-11 10:38:48.742 [main] INFO  tests.BannerSignInTest - Step 2: Filling property details
+2025-12-11 10:38:48.742 [main] INFO  pageObject.PropertyDetailsPage - Starting property details fill process
+2025-12-11 10:38:48.742 [main] INFO  pageObject.PropertyDetailsPage - Selecting Apartment option
+2025-12-11 10:39:16.446 [main] INFO  pageObject.PropertyDetailsPage - Apartment option selected successfully
+2025-12-11 10:39:16.446 [main] INFO  pageObject.PropertyDetailsPage - Selecting 2BHK option
+2025-12-11 10:39:16.897 [main] INFO  pageObject.PropertyDetailsPage - 2BHK option selected successfully
+2025-12-11 10:39:16.897 [main] INFO  pageObject.PropertyDetailsPage - Searching for property: TestYantra Software Solutions, Somajiguda, Hyderabad, Telangana, India
+2025-12-11 10:39:17.497 [main] INFO  pageObject.PropertyDetailsPage - Property search area clicked
+2025-12-11 10:39:20.186 [main] INFO  pageObject.PropertyDetailsPage - Property name entered in search box
+2025-12-11 10:39:22.543 [main] INFO  pageObject.PropertyDetailsPage - Property selected from search results
+2025-12-11 10:39:22.543 [main] INFO  pageObject.PropertyDetailsPage - Clicking Next button
+2025-12-11 10:39:23.013 [main] INFO  pageObject.PropertyDetailsPage - Next button clicked successfully
+2025-12-11 10:39:23.013 [main] INFO  pageObject.PropertyDetailsPage - Waiting for page transition (5 seconds)
+2025-12-11 10:39:28.024 [main] INFO  pageObject.PropertyDetailsPage - Page transition wait completed
+2025-12-11 10:39:28.024 [main] INFO  pageObject.PropertyDetailsPage - Property details fill process completed
+2025-12-11 10:39:28.024 [main] INFO  tests.BannerSignInTest - Step 2: Property details filled successfully
+2025-12-11 10:39:28.026 [main] INFO  tests.BannerSignInTest - Step 3: Filling planning options
+2025-12-11 10:39:28.026 [main] INFO  pageObject.PlanningOptionsPage - Starting planning options fill process
+2025-12-11 10:39:28.026 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'Rent Out' option
+2025-12-11 10:39:28.625 [main] INFO  pageObject.PlanningOptionsPage - 'Rent Out' option selected successfully
+2025-12-11 10:39:28.625 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'End-to-end Interiors' option
+2025-12-11 10:39:29.069 [main] INFO  pageObject.PlanningOptionsPage - 'End-to-end Interiors' option selected successfully
+2025-12-11 10:39:29.071 [main] INFO  pageObject.PlanningOptionsPage - Selecting budget option
+2025-12-11 10:39:29.509 [main] INFO  pageObject.PlanningOptionsPage - Budget dropdown clicked
+2025-12-11 10:39:29.982 [main] INFO  pageObject.PlanningOptionsPage - Budget option selected successfully
+2025-12-11 10:39:29.982 [main] INFO  pageObject.PlanningOptionsPage - Selecting possession option
+2025-12-11 10:39:30.474 [main] INFO  pageObject.PlanningOptionsPage - Possession dropdown clicked
+2025-12-11 10:39:31.045 [main] INFO  pageObject.PlanningOptionsPage - Possession option selected successfully
+2025-12-11 10:39:31.045 [main] INFO  pageObject.PlanningOptionsPage - Clicking Next button
+2025-12-11 10:39:31.604 [main] INFO  pageObject.PlanningOptionsPage - Next button clicked successfully
+2025-12-11 10:39:31.604 [main] INFO  pageObject.PlanningOptionsPage - Planning options fill process completed
+2025-12-11 10:39:31.604 [main] INFO  tests.BannerSignInTest - Step 3: Planning options filled successfully
+2025-12-11 10:39:31.604 [main] INFO  tests.BannerSignInTest - Step 4: Scheduling meeting
+2025-12-11 10:39:31.604 [main] INFO  utilis.Utilities - Generated tomorrow's date: 12-12-2025
+2025-12-11 10:39:31.607 [main] INFO  tests.BannerSignInTest - Using tomorrow's date: 12-12-2025
+2025-12-11 10:39:31.607 [main] INFO  pageObject.MeetingSchedulePage - Starting meeting scheduling process
+2025-12-11 10:39:31.607 [main] INFO  pageObject.MeetingSchedulePage - Selecting experience centre
+2025-12-11 10:39:32.614 [main] INFO  pageObject.MeetingSchedulePage - Experience centre dropdown clicked
+2025-12-11 10:39:33.041 [main] INFO  pageObject.MeetingSchedulePage - Experience centre option selected successfully
+2025-12-11 10:39:33.041 [main] INFO  pageObject.MeetingSchedulePage - Selecting date: 12-12-2025
+2025-12-11 10:39:44.308 [main] INFO  pageObject.MeetingSchedulePage - Loader disappeared
+2025-12-11 10:39:44.799 [main] INFO  pageObject.MeetingSchedulePage - Date dropdown clicked
+2025-12-11 10:39:46.808 [main] INFO  pageObject.MeetingSchedulePage - Waiting for datepicker calendar to load
+2025-12-11 10:39:46.811 [main] INFO  pageObject.MeetingSchedulePage - Looking for date: 12
+2025-12-11 10:39:46.856 [main] INFO  pageObject.MeetingSchedulePage - Strategy 1: Looking for aria-label: Choose Friday, December 12th, 2025
+2025-12-11 10:39:56.929 [main] WARN  pageObject.MeetingSchedulePage - Strategy 1 failed: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='react-datepicker__day' and @aria-label='Choose Friday, December 12th, 2025']"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1095c0e41674127ec179751edef37464, findElement {value=//div[@class='react-datepicker__day' and @aria-label='Choose Friday, December 12th, 2025'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51727}, goog:processID: 4088, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51727/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1095c0e41674127ec179751edef37464
+2025-12-11 10:39:56.929 [main] INFO  pageObject.MeetingSchedulePage - Strategy 2: Looking for date with XPath: //div[contains(@class, 'react-datepicker__day') and text()='12' and not(contains(@class, 'disabled'))]
+2025-12-11 10:39:57.069 [main] INFO  pageObject.MeetingSchedulePage - Found date using Strategy 2 (simple text match)
+2025-12-11 10:39:57.413 [main] INFO  pageObject.MeetingSchedulePage - Date selected successfully: 12-12-2025
+2025-12-11 10:39:58.919 [main] INFO  pageObject.MeetingSchedulePage - Waiting for time slots to load after date selection
+2025-12-11 10:39:58.919 [main] INFO  pageObject.MeetingSchedulePage - Selecting time slot
+2025-12-11 10:40:08.952 [main] INFO  pageObject.MeetingSchedulePage - Loader disappeared
+2025-12-11 10:40:09.399 [main] INFO  pageObject.MeetingSchedulePage - Time slot dropdown clicked
+2025-12-11 10:40:10.328 [main] INFO  pageObject.MeetingSchedulePage - Time slot selected successfully
+2025-12-11 10:40:10.328 [main] INFO  pageObject.MeetingSchedulePage - Clicking 'Book Free Design Session' button
+2025-12-11 10:40:10.890 [main] INFO  pageObject.MeetingSchedulePage - 'Book Free Design Session' button clicked successfully
+2025-12-11 10:40:10.890 [main] INFO  pageObject.MeetingSchedulePage - Waiting for final submission (5 seconds)
+2025-12-11 10:40:15.905 [main] INFO  pageObject.MeetingSchedulePage - Final submission wait completed
+2025-12-11 10:40:15.905 [main] INFO  pageObject.MeetingSchedulePage - Meeting scheduling process completed
+2025-12-11 10:40:15.905 [main] INFO  tests.BannerSignInTest - Step 4: Meeting scheduled successfully
+2025-12-11 10:40:15.905 [main] INFO  tests.BannerSignInTest - ✅ Banner Sign In Test completed successfully!
+2025-12-11 10:40:15.908 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Completed ----------
+2025-12-11 10:40:15.923 [main] INFO  tests.BannerSignInTest - Cleaning up and closing browser
+2025-12-11 10:40:16.347 [main] INFO  tests.BannerSignInTest - Browser closed successfully
+2025-12-11 10:40:16.347 [main] INFO  tests.BannerSignInTest - ========== Test Execution Ended ==========
+
+2025-12-11 10:43:12.666 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 10:43:12.703 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 10:43:12.703 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 10:43:16.504 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 10:43:16.527 [main] INFO  tests.BannerSignInTest - Current URL: https://www.homelane.com/
+2025-12-11 10:43:16.542 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 10:43:16.551 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 10:43:16.551 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 10:43:16.610 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 10:43:16.617 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 10:43:16.622 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 10:43:16.622 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 10:43:16.622 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 10:43:16.644 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 10:43:16.659 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6010779391
+2025-12-11 10:43:16.661 [main] INFO  tests.BannerSignInTest - Using phone number: 6010779391
+2025-12-11 10:43:16.661 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 10:43:16.664 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 10:43:16.666 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 10:43:17.603 [main] INFO  pageObject.BannerFormPage - Name entered successfully
+2025-12-11 10:43:17.603 [main] INFO  pageObject.BannerFormPage - Entering mobile number: 6010779391
+2025-12-11 10:43:18.404 [main] INFO  pageObject.BannerFormPage - Mobile number entered successfully
+2025-12-11 10:43:18.406 [main] INFO  pageObject.BannerFormPage - Selecting property location
+2025-12-11 10:43:18.960 [main] INFO  pageObject.BannerFormPage - Property location dropdown clicked
+2025-12-11 10:43:19.634 [main] INFO  pageObject.BannerFormPage - City option selected successfully
+2025-12-11 10:43:19.634 [main] INFO  pageObject.BannerFormPage - Clicking Book 3D Design Session button
+2025-12-11 10:43:20.219 [main] INFO  pageObject.BannerFormPage - Book session button clicked successfully
+2025-12-11 10:43:20.221 [main] INFO  pageObject.BannerFormPage - Entering OTP: 3692
+2025-12-11 10:43:23.001 [main] INFO  pageObject.BannerFormPage - OTP entered successfully
+2025-12-11 10:43:23.001 [main] INFO  pageObject.BannerFormPage - Clicking Submit button
+2025-12-11 10:43:23.456 [main] INFO  pageObject.BannerFormPage - Submit button clicked successfully
+2025-12-11 10:43:23.456 [main] INFO  pageObject.BannerFormPage - Banner form fill process completed
+2025-12-11 10:43:23.456 [main] INFO  tests.BannerSignInTest - Step 1: Banner form filled successfully
+2025-12-11 10:43:23.456 [main] INFO  tests.BannerSignInTest - Step 2: Filling property details
+2025-12-11 10:43:23.456 [main] INFO  pageObject.PropertyDetailsPage - Starting property details fill process
+2025-12-11 10:43:23.456 [main] INFO  pageObject.PropertyDetailsPage - Selecting Apartment option
+2025-12-11 10:43:49.521 [main] INFO  pageObject.PropertyDetailsPage - Apartment option selected successfully
+2025-12-11 10:43:49.522 [main] INFO  pageObject.PropertyDetailsPage - Selecting 2BHK option
+2025-12-11 10:43:50.046 [main] INFO  pageObject.PropertyDetailsPage - 2BHK option selected successfully
+2025-12-11 10:43:50.046 [main] INFO  pageObject.PropertyDetailsPage - Searching for property: TestYantra Software Solutions, Somajiguda, Hyderabad, Telangana, India
+2025-12-11 10:43:50.482 [main] INFO  pageObject.PropertyDetailsPage - Property search area clicked
+2025-12-11 10:43:53.126 [main] INFO  pageObject.PropertyDetailsPage - Property name entered in search box
+2025-12-11 10:43:55.409 [main] INFO  pageObject.PropertyDetailsPage - Property selected from search results
+2025-12-11 10:43:55.409 [main] INFO  pageObject.PropertyDetailsPage - Clicking Next button
+2025-12-11 10:43:56.388 [main] INFO  pageObject.PropertyDetailsPage - Next button clicked successfully
+2025-12-11 10:43:56.389 [main] INFO  pageObject.PropertyDetailsPage - Waiting for page transition (5 seconds)
+2025-12-11 10:44:01.392 [main] INFO  pageObject.PropertyDetailsPage - Page transition wait completed
+2025-12-11 10:44:01.392 [main] INFO  pageObject.PropertyDetailsPage - Property details fill process completed
+2025-12-11 10:44:01.392 [main] INFO  tests.BannerSignInTest - Step 2: Property details filled successfully
+2025-12-11 10:44:01.392 [main] INFO  tests.BannerSignInTest - Step 3: Filling planning options
+2025-12-11 10:44:01.392 [main] INFO  pageObject.PlanningOptionsPage - Starting planning options fill process
+2025-12-11 10:44:01.392 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'Rent Out' option
+2025-12-11 10:44:02.027 [main] INFO  pageObject.PlanningOptionsPage - 'Rent Out' option selected successfully
+2025-12-11 10:44:02.027 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'End-to-end Interiors' option
+2025-12-11 10:44:02.659 [main] INFO  pageObject.PlanningOptionsPage - 'End-to-end Interiors' option selected successfully
+2025-12-11 10:44:02.659 [main] INFO  pageObject.PlanningOptionsPage - Selecting budget option
+2025-12-11 10:44:03.109 [main] INFO  pageObject.PlanningOptionsPage - Budget dropdown clicked
+2025-12-11 10:44:03.576 [main] INFO  pageObject.PlanningOptionsPage - Budget option selected successfully
+2025-12-11 10:44:03.576 [main] INFO  pageObject.PlanningOptionsPage - Selecting possession option
+2025-12-11 10:44:03.956 [main] INFO  pageObject.PlanningOptionsPage - Possession dropdown clicked
+2025-12-11 10:44:04.361 [main] INFO  pageObject.PlanningOptionsPage - Possession option selected successfully
+2025-12-11 10:44:04.361 [main] INFO  pageObject.PlanningOptionsPage - Clicking Next button
+2025-12-11 10:44:04.909 [main] INFO  pageObject.PlanningOptionsPage - Next button clicked successfully
+2025-12-11 10:44:04.911 [main] INFO  pageObject.PlanningOptionsPage - Planning options fill process completed
+2025-12-11 10:44:04.911 [main] INFO  tests.BannerSignInTest - Step 3: Planning options filled successfully
+2025-12-11 10:44:04.911 [main] INFO  tests.BannerSignInTest - Step 4: Scheduling meeting
+2025-12-11 10:44:04.913 [main] INFO  utilis.Utilities - Generated tomorrow's date: 12-12-2025
+2025-12-11 10:44:04.913 [main] INFO  tests.BannerSignInTest - Using tomorrow's date: 12-12-2025
+2025-12-11 10:44:04.913 [main] INFO  pageObject.MeetingSchedulePage - Starting meeting scheduling process
+2025-12-11 10:44:04.914 [main] INFO  pageObject.MeetingSchedulePage - Selecting experience centre
+2025-12-11 10:44:25.114 [main] ERROR pageObject.MeetingSchedulePage - Failed to select experience centre: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='BFC_flowSteps_selectOption_section__32fyK' and contains(., 'Select Experience Centre')]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='BFC_flowSteps_selectOption_section__32fyK' and contains(., 'Select Experience Centre')]' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObject.MeetingSchedulePage.selectExperienceCentre(MeetingSchedulePage.java:68)
+	at pageObject.MeetingSchedulePage.scheduleMeeting(MeetingSchedulePage.java:232)
+	at tests.BannerSignInTest.bannerPageSignInTest(BannerSignInTest.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='BFC_flowSteps_selectOption_section__32fyK' and contains(., 'Select Experience Centre')]"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [24f73a5ef5b38fc9baae5960244bf95d, findElement {using=xpath, value=//div[@class='BFC_flowSteps_selectOption_section__32fyK' and contains(., 'Select Experience Centre')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49241}, goog:processID: 18780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49241/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 24f73a5ef5b38fc9baae5960244bf95d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 common frames omitted
+2025-12-11 10:52:42.052 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 10:52:42.237 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 10:52:42.250 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 10:52:50.321 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 10:52:50.369 [main] INFO  tests.BannerSignInTest - Current URL: https://www.homelane.com/
+2025-12-11 10:52:50.510 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 10:52:50.518 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 10:52:50.520 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 10:52:50.660 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 10:52:50.676 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 10:52:50.685 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 10:52:50.704 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 10:52:50.704 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 10:52:50.714 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 10:52:50.733 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6020937003
+2025-12-11 10:52:50.733 [main] INFO  tests.BannerSignInTest - Using phone number: 6020937003
+2025-12-11 10:52:50.740 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 10:52:50.740 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 10:52:50.740 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 10:52:55.303 [main] INFO  pageObject.BannerFormPage - Name entered successfully
+2025-12-11 10:52:55.303 [main] INFO  pageObject.BannerFormPage - Entering mobile number: 6020937003
+2025-12-11 10:52:56.822 [main] INFO  pageObject.BannerFormPage - Mobile number entered successfully
+2025-12-11 10:52:56.822 [main] INFO  pageObject.BannerFormPage - Selecting property location
+2025-12-11 10:52:57.468 [main] INFO  pageObject.BannerFormPage - Property location dropdown clicked
+2025-12-11 10:52:58.484 [main] INFO  pageObject.BannerFormPage - City option selected successfully
+2025-12-11 10:52:58.488 [main] INFO  pageObject.BannerFormPage - Clicking Book 3D Design Session button
+2025-12-11 10:52:59.418 [main] INFO  pageObject.BannerFormPage - Book session button clicked successfully
+2025-12-11 10:52:59.418 [main] INFO  pageObject.BannerFormPage - Entering OTP: 3692
+2025-12-11 10:53:03.027 [main] INFO  pageObject.BannerFormPage - OTP entered successfully
+2025-12-11 10:53:03.027 [main] INFO  pageObject.BannerFormPage - Clicking Submit button
+2025-12-11 10:53:03.940 [main] INFO  pageObject.BannerFormPage - Submit button clicked successfully
+2025-12-11 10:53:03.940 [main] INFO  pageObject.BannerFormPage - Banner form fill process completed
+2025-12-11 10:53:03.940 [main] INFO  tests.BannerSignInTest - Step 1: Banner form filled successfully
+2025-12-11 10:53:03.940 [main] INFO  tests.BannerSignInTest - Step 2: Filling property details
+2025-12-11 10:53:03.940 [main] INFO  pageObject.PropertyDetailsPage - Starting property details fill process
+2025-12-11 10:53:03.940 [main] INFO  pageObject.PropertyDetailsPage - Selecting Apartment option
+2025-12-11 10:53:24.665 [main] INFO  pageObject.PropertyDetailsPage - Apartment option selected successfully
+2025-12-11 10:53:24.665 [main] INFO  pageObject.PropertyDetailsPage - Selecting 2BHK option
+2025-12-11 10:53:25.107 [main] INFO  pageObject.PropertyDetailsPage - 2BHK option selected successfully
+2025-12-11 10:53:25.107 [main] INFO  pageObject.PropertyDetailsPage - Searching for property: TestYantra Software Solutions, Somajiguda, Hyderabad, Telangana, India
+2025-12-11 10:53:25.667 [main] INFO  pageObject.PropertyDetailsPage - Property search area clicked
+2025-12-11 10:53:28.453 [main] INFO  pageObject.PropertyDetailsPage - Property name entered in search box
+2025-12-11 10:53:30.818 [main] INFO  pageObject.PropertyDetailsPage - Property selected from search results
+2025-12-11 10:53:30.818 [main] INFO  pageObject.PropertyDetailsPage - Clicking Next button
+2025-12-11 10:53:31.416 [main] INFO  pageObject.PropertyDetailsPage - Next button clicked successfully
+2025-12-11 10:53:31.416 [main] INFO  pageObject.PropertyDetailsPage - Waiting for page transition (5 seconds)
+2025-12-11 10:53:36.433 [main] INFO  pageObject.PropertyDetailsPage - Page transition wait completed
+2025-12-11 10:53:36.433 [main] INFO  pageObject.PropertyDetailsPage - Property details fill process completed
+2025-12-11 10:53:36.433 [main] INFO  tests.BannerSignInTest - Step 2: Property details filled successfully
+2025-12-11 10:53:36.433 [main] INFO  tests.BannerSignInTest - Step 3: Filling planning options
+2025-12-11 10:53:36.433 [main] INFO  pageObject.PlanningOptionsPage - Starting planning options fill process
+2025-12-11 10:53:36.433 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'Rent Out' option
+2025-12-11 10:53:37.254 [main] INFO  pageObject.PlanningOptionsPage - 'Rent Out' option selected successfully
+2025-12-11 10:53:37.254 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'End-to-end Interiors' option
+2025-12-11 10:53:37.886 [main] INFO  pageObject.PlanningOptionsPage - 'End-to-end Interiors' option selected successfully
+2025-12-11 10:53:37.886 [main] INFO  pageObject.PlanningOptionsPage - Selecting budget option
+2025-12-11 10:53:38.401 [main] INFO  pageObject.PlanningOptionsPage - Budget dropdown clicked
+2025-12-11 10:53:38.993 [main] INFO  pageObject.PlanningOptionsPage - Budget option selected successfully
+2025-12-11 10:53:38.993 [main] INFO  pageObject.PlanningOptionsPage - Selecting possession option
+2025-12-11 10:53:39.453 [main] INFO  pageObject.PlanningOptionsPage - Possession dropdown clicked
+2025-12-11 10:53:40.022 [main] INFO  pageObject.PlanningOptionsPage - Possession option selected successfully
+2025-12-11 10:53:40.022 [main] INFO  pageObject.PlanningOptionsPage - Clicking Next button
+2025-12-11 10:53:40.525 [main] INFO  pageObject.PlanningOptionsPage - Next button clicked successfully
+2025-12-11 10:53:40.525 [main] INFO  pageObject.PlanningOptionsPage - Planning options fill process completed
+2025-12-11 10:53:40.525 [main] INFO  tests.BannerSignInTest - Step 3: Planning options filled successfully
+2025-12-11 10:53:40.525 [main] INFO  tests.BannerSignInTest - Step 4: Scheduling meeting
+2025-12-11 10:53:40.528 [main] INFO  utilis.Utilities - Generated tomorrow's date: 12-12-2025
+2025-12-11 10:53:40.528 [main] INFO  tests.BannerSignInTest - Using tomorrow's date: 12-12-2025
+2025-12-11 10:53:40.528 [main] INFO  pageObject.MeetingSchedulePage - Starting meeting scheduling process
+2025-12-11 10:53:40.528 [main] INFO  pageObject.MeetingSchedulePage - Selecting experience centre
+2025-12-11 10:53:51.022 [main] ERROR pageObject.MeetingSchedulePage - Failed to select experience centre: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (fda19e518077a90147914d41156c542e)] -> xpath: //div[@class='BFC_flowSteps_selectOption_section__32fyK']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52557}, goog:processID: 17792, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52557/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fda19e518077a90147914d41156c542e
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (fda19e518077a90147914d41156c542e)] -> xpath: //div[@class='BFC_flowSteps_selectOption_section__32fyK']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52557}, goog:processID: 17792, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52557/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fda19e518077a90147914d41156c542e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObject.MeetingSchedulePage.selectExperienceCentre(MeetingSchedulePage.java:68)
+	at pageObject.MeetingSchedulePage.scheduleMeeting(MeetingSchedulePage.java:232)
+	at tests.BannerSignInTest.bannerPageSignInTest(BannerSignInTest.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-12-11 10:56:53.637 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 10:56:53.687 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 10:56:53.687 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 10:56:57.443 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 10:56:57.459 [main] INFO  tests.BannerSignInTest - Current URL: https://website-preprod.homelane.com/
+2025-12-11 10:56:57.489 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 10:56:57.497 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 10:56:57.497 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 10:56:57.553 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 10:56:57.561 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 10:56:57.561 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 10:56:57.579 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 10:56:57.579 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 10:56:57.585 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 10:56:57.602 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6089416934
+2025-12-11 10:56:57.602 [main] INFO  tests.BannerSignInTest - Using phone number: 6089416934
+2025-12-11 10:56:57.602 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 10:56:57.602 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 10:56:57.602 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 10:57:17.793 [main] ERROR pageObject.BannerFormPage - Failed to enter name: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: #bfc-form-container input[placeholder='Enter your name']' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: #bfc-form-container input[placeholder='Enter your name']' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObject.BannerFormPage.enterName(BannerFormPage.java:53)
+	at pageObject.BannerFormPage.fillBannerForm(BannerFormPage.java:130)
+	at tests.BannerSignInTest.bannerPageSignInTest(BannerSignInTest.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#bfc-form-container input[placeholder='Enter your name']"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8e3f904055db1463c342b2ceb124deb, findElement {using=css selector, value=#bfc-form-container input[placeholder='Enter your name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63503}, goog:processID: 17044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63503/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8e3f904055db1463c342b2ceb124deb
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 common frames omitted
+2025-12-11 10:57:29.015 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 10:57:29.071 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 10:57:29.071 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 10:57:33.449 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 10:57:33.482 [main] INFO  tests.BannerSignInTest - Current URL: https://website-preprod.homelane.com/
+2025-12-11 10:57:33.500 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 10:57:33.500 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 10:57:33.500 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 10:57:33.578 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 10:57:33.587 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 10:57:33.597 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 10:57:33.601 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 10:57:33.601 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 10:57:33.614 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 10:57:33.635 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6011798767
+2025-12-11 10:57:33.635 [main] INFO  tests.BannerSignInTest - Using phone number: 6011798767
+2025-12-11 10:57:33.639 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 10:57:33.639 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 10:57:33.639 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 10:57:34.851 [main] INFO  pageObject.BannerFormPage - Name entered successfully
+2025-12-11 10:57:34.853 [main] INFO  pageObject.BannerFormPage - Entering mobile number: 6011798767
+2025-12-11 10:57:36.344 [main] INFO  pageObject.BannerFormPage - Mobile number entered successfully
+2025-12-11 10:57:36.347 [main] INFO  pageObject.BannerFormPage - Selecting property location
+2025-12-11 10:57:37.085 [main] INFO  pageObject.BannerFormPage - Property location dropdown clicked
+2025-12-11 10:57:37.804 [main] INFO  pageObject.BannerFormPage - City option selected successfully
+2025-12-11 10:57:37.806 [main] INFO  pageObject.BannerFormPage - Clicking Book 3D Design Session button
+2025-12-11 10:57:38.440 [main] INFO  pageObject.BannerFormPage - Book session button clicked successfully
+2025-12-11 10:57:38.442 [main] INFO  pageObject.BannerFormPage - Entering OTP: 6633
+2025-12-11 10:57:40.917 [main] INFO  pageObject.BannerFormPage - OTP entered successfully
+2025-12-11 10:57:40.917 [main] INFO  pageObject.BannerFormPage - Clicking Submit button
+2025-12-11 10:57:41.584 [main] INFO  pageObject.BannerFormPage - Submit button clicked successfully
+2025-12-11 10:57:41.584 [main] INFO  pageObject.BannerFormPage - Banner form fill process completed
+2025-12-11 10:57:41.584 [main] INFO  tests.BannerSignInTest - Step 1: Banner form filled successfully
+2025-12-11 10:57:41.584 [main] INFO  tests.BannerSignInTest - Step 2: Filling property details
+2025-12-11 10:57:41.584 [main] INFO  pageObject.PropertyDetailsPage - Starting property details fill process
+2025-12-11 10:57:41.584 [main] INFO  pageObject.PropertyDetailsPage - Selecting Apartment option
+2025-12-11 10:58:06.614 [main] INFO  pageObject.PropertyDetailsPage - Apartment option selected successfully
+2025-12-11 10:58:06.614 [main] INFO  pageObject.PropertyDetailsPage - Selecting 2BHK option
+2025-12-11 10:58:07.243 [main] INFO  pageObject.PropertyDetailsPage - 2BHK option selected successfully
+2025-12-11 10:58:07.245 [main] INFO  pageObject.PropertyDetailsPage - Searching for property: TestYantra Software Solutions, Somajiguda, Hyderabad, Telangana, India
+2025-12-11 10:58:07.663 [main] INFO  pageObject.PropertyDetailsPage - Property search area clicked
+2025-12-11 10:58:10.368 [main] INFO  pageObject.PropertyDetailsPage - Property name entered in search box
+2025-12-11 10:58:12.713 [main] INFO  pageObject.PropertyDetailsPage - Property selected from search results
+2025-12-11 10:58:12.713 [main] INFO  pageObject.PropertyDetailsPage - Clicking Next button
+2025-12-11 10:58:13.239 [main] INFO  pageObject.PropertyDetailsPage - Next button clicked successfully
+2025-12-11 10:58:13.239 [main] INFO  pageObject.PropertyDetailsPage - Waiting for page transition (5 seconds)
+2025-12-11 10:58:18.256 [main] INFO  pageObject.PropertyDetailsPage - Page transition wait completed
+2025-12-11 10:58:18.257 [main] INFO  pageObject.PropertyDetailsPage - Property details fill process completed
+2025-12-11 10:58:18.257 [main] INFO  tests.BannerSignInTest - Step 2: Property details filled successfully
+2025-12-11 10:58:18.257 [main] INFO  tests.BannerSignInTest - Step 3: Filling planning options
+2025-12-11 10:58:18.257 [main] INFO  pageObject.PlanningOptionsPage - Starting planning options fill process
+2025-12-11 10:58:18.257 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'Rent Out' option
+2025-12-11 10:58:18.908 [main] INFO  pageObject.PlanningOptionsPage - 'Rent Out' option selected successfully
+2025-12-11 10:58:18.908 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'End-to-end Interiors' option
+2025-12-11 10:58:19.519 [main] INFO  pageObject.PlanningOptionsPage - 'End-to-end Interiors' option selected successfully
+2025-12-11 10:58:19.519 [main] INFO  pageObject.PlanningOptionsPage - Selecting budget option
+2025-12-11 10:58:20.050 [main] INFO  pageObject.PlanningOptionsPage - Budget dropdown clicked
+2025-12-11 10:58:20.696 [main] INFO  pageObject.PlanningOptionsPage - Budget option selected successfully
+2025-12-11 10:58:20.696 [main] INFO  pageObject.PlanningOptionsPage - Selecting possession option
+2025-12-11 10:58:21.297 [main] INFO  pageObject.PlanningOptionsPage - Possession dropdown clicked
+2025-12-11 10:58:21.999 [main] INFO  pageObject.PlanningOptionsPage - Possession option selected successfully
+2025-12-11 10:58:21.999 [main] INFO  pageObject.PlanningOptionsPage - Clicking Next button
+2025-12-11 10:58:22.548 [main] INFO  pageObject.PlanningOptionsPage - Next button clicked successfully
+2025-12-11 10:58:22.548 [main] INFO  pageObject.PlanningOptionsPage - Planning options fill process completed
+2025-12-11 10:58:22.548 [main] INFO  tests.BannerSignInTest - Step 3: Planning options filled successfully
+2025-12-11 10:58:22.548 [main] INFO  tests.BannerSignInTest - Step 4: Scheduling meeting
+2025-12-11 10:58:22.548 [main] INFO  utilis.Utilities - Generated tomorrow's date: 12-12-2025
+2025-12-11 10:58:22.548 [main] INFO  tests.BannerSignInTest - Using tomorrow's date: 12-12-2025
+2025-12-11 10:58:22.548 [main] INFO  pageObject.MeetingSchedulePage - Starting meeting scheduling process
+2025-12-11 10:58:22.548 [main] INFO  pageObject.MeetingSchedulePage - Selecting experience centre
+2025-12-11 10:58:32.850 [main] ERROR pageObject.MeetingSchedulePage - Failed to select experience centre: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (1ccf758f535c199984f34274f14874f9)] -> xpath: //div[@class='BFC_flowSteps_selectOption_section__32fyK']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63667}, goog:processID: 24584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63667/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ccf758f535c199984f34274f14874f9
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (1ccf758f535c199984f34274f14874f9)] -> xpath: //div[@class='BFC_flowSteps_selectOption_section__32fyK']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63667}, goog:processID: 24584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63667/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ccf758f535c199984f34274f14874f9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObject.MeetingSchedulePage.selectExperienceCentre(MeetingSchedulePage.java:68)
+	at pageObject.MeetingSchedulePage.scheduleMeeting(MeetingSchedulePage.java:232)
+	at tests.BannerSignInTest.bannerPageSignInTest(BannerSignInTest.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-12-11 11:03:16.541 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 11:03:16.585 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 11:03:16.588 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 11:03:21.608 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 11:03:21.643 [main] INFO  tests.BannerSignInTest - Current URL: https://website-preprod.homelane.com/
+2025-12-11 11:03:21.664 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 11:03:21.664 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 11:03:21.664 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 11:03:21.726 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 11:03:21.729 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 11:03:21.743 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 11:03:21.751 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 11:03:21.751 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 11:03:21.760 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 11:03:21.779 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6008700316
+2025-12-11 11:03:21.779 [main] INFO  tests.BannerSignInTest - Using phone number: 6008700316
+2025-12-11 11:03:21.779 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 11:03:21.779 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 11:03:21.779 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 11:03:22.588 [main] INFO  pageObject.BannerFormPage - Name entered successfully
+2025-12-11 11:03:22.588 [main] INFO  pageObject.BannerFormPage - Entering mobile number: 6008700316
+2025-12-11 11:03:23.386 [main] INFO  pageObject.BannerFormPage - Mobile number entered successfully
+2025-12-11 11:03:23.386 [main] INFO  pageObject.BannerFormPage - Selecting property location
+2025-12-11 11:03:23.785 [main] INFO  pageObject.BannerFormPage - Property location dropdown clicked
+2025-12-11 11:03:25.244 [main] INFO  pageObject.BannerFormPage - City option selected successfully
+2025-12-11 11:03:25.244 [main] INFO  pageObject.BannerFormPage - Clicking Book 3D Design Session button
+2025-12-11 11:03:25.643 [main] INFO  pageObject.BannerFormPage - Book session button clicked successfully
+2025-12-11 11:03:25.643 [main] INFO  pageObject.BannerFormPage - Entering OTP: 6633
+2025-12-11 11:03:27.778 [main] INFO  pageObject.BannerFormPage - OTP entered successfully
+2025-12-11 11:03:27.778 [main] INFO  pageObject.BannerFormPage - Clicking Submit button
+2025-12-11 11:03:28.233 [main] INFO  pageObject.BannerFormPage - Submit button clicked successfully
+2025-12-11 11:03:28.233 [main] INFO  pageObject.BannerFormPage - Banner form fill process completed
+2025-12-11 11:03:28.233 [main] INFO  tests.BannerSignInTest - Step 1: Banner form filled successfully
+2025-12-11 11:03:28.233 [main] INFO  tests.BannerSignInTest - Step 2: Filling property details
+2025-12-11 11:03:28.233 [main] INFO  pageObject.PropertyDetailsPage - Starting property details fill process
+2025-12-11 11:03:28.233 [main] INFO  pageObject.PropertyDetailsPage - Selecting Apartment option
+2025-12-11 11:03:54.757 [main] INFO  pageObject.PropertyDetailsPage - Apartment option selected successfully
+2025-12-11 11:03:54.759 [main] INFO  pageObject.PropertyDetailsPage - Selecting 2BHK option
+2025-12-11 11:03:55.270 [main] INFO  pageObject.PropertyDetailsPage - 2BHK option selected successfully
+2025-12-11 11:03:55.270 [main] INFO  pageObject.PropertyDetailsPage - Searching for property: TestYantra Software Solutions, Somajiguda, Hyderabad, Telangana, India
+2025-12-11 11:03:55.820 [main] INFO  pageObject.PropertyDetailsPage - Property search area clicked
+2025-12-11 11:03:58.502 [main] INFO  pageObject.PropertyDetailsPage - Property name entered in search box
+2025-12-11 11:04:00.890 [main] INFO  pageObject.PropertyDetailsPage - Property selected from search results
+2025-12-11 11:04:00.892 [main] INFO  pageObject.PropertyDetailsPage - Clicking Next button
+2025-12-11 11:04:01.361 [main] INFO  pageObject.PropertyDetailsPage - Next button clicked successfully
+2025-12-11 11:04:01.361 [main] INFO  pageObject.PropertyDetailsPage - Waiting for page transition (5 seconds)
+2025-12-11 11:04:06.383 [main] INFO  pageObject.PropertyDetailsPage - Page transition wait completed
+2025-12-11 11:04:06.383 [main] INFO  pageObject.PropertyDetailsPage - Property details fill process completed
+2025-12-11 11:04:06.383 [main] INFO  tests.BannerSignInTest - Step 2: Property details filled successfully
+2025-12-11 11:04:06.383 [main] INFO  tests.BannerSignInTest - Step 3: Filling planning options
+2025-12-11 11:04:06.383 [main] INFO  pageObject.PlanningOptionsPage - Starting planning options fill process
+2025-12-11 11:04:06.383 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'Rent Out' option
+2025-12-11 11:04:06.994 [main] INFO  pageObject.PlanningOptionsPage - 'Rent Out' option selected successfully
+2025-12-11 11:04:06.994 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'End-to-end Interiors' option
+2025-12-11 11:04:07.431 [main] INFO  pageObject.PlanningOptionsPage - 'End-to-end Interiors' option selected successfully
+2025-12-11 11:04:07.431 [main] INFO  pageObject.PlanningOptionsPage - Selecting budget option
+2025-12-11 11:04:08.011 [main] INFO  pageObject.PlanningOptionsPage - Budget dropdown clicked
+2025-12-11 11:04:08.611 [main] INFO  pageObject.PlanningOptionsPage - Budget option selected successfully
+2025-12-11 11:04:08.613 [main] INFO  pageObject.PlanningOptionsPage - Selecting possession option
+2025-12-11 11:04:09.097 [main] INFO  pageObject.PlanningOptionsPage - Possession dropdown clicked
+2025-12-11 11:04:09.700 [main] INFO  pageObject.PlanningOptionsPage - Possession option selected successfully
+2025-12-11 11:04:09.709 [main] INFO  pageObject.PlanningOptionsPage - Clicking Next button
+2025-12-11 11:04:10.186 [main] INFO  pageObject.PlanningOptionsPage - Next button clicked successfully
+2025-12-11 11:04:10.186 [main] INFO  pageObject.PlanningOptionsPage - Planning options fill process completed
+2025-12-11 11:04:10.186 [main] INFO  tests.BannerSignInTest - Step 3: Planning options filled successfully
+2025-12-11 11:04:10.186 [main] INFO  tests.BannerSignInTest - Step 4: Scheduling meeting
+2025-12-11 11:04:10.193 [main] INFO  utilis.Utilities - Generated tomorrow's date: 12-12-2025
+2025-12-11 11:04:10.193 [main] INFO  tests.BannerSignInTest - Using tomorrow's date: 12-12-2025
+2025-12-11 11:04:10.193 [main] INFO  pageObject.MeetingSchedulePage - Starting meeting scheduling process
+2025-12-11 11:04:10.193 [main] INFO  pageObject.MeetingSchedulePage - Selecting experience centre
+2025-12-11 11:04:20.376 [main] ERROR pageObject.MeetingSchedulePage - Failed to select experience centre: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (b5bb173d4d3dd3e49714ac9992e8e11d)] -> xpath: //div[@class='BFC_flowSteps_internalTabs_cards__1KbHv']//div[@class='BFC_flowSteps_selectOption_section__32fyK']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58962}, goog:processID: 17196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58962/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b5bb173d4d3dd3e49714ac9992e8e11d
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (b5bb173d4d3dd3e49714ac9992e8e11d)] -> xpath: //div[@class='BFC_flowSteps_internalTabs_cards__1KbHv']//div[@class='BFC_flowSteps_selectOption_section__32fyK']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58962}, goog:processID: 17196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58962/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b5bb173d4d3dd3e49714ac9992e8e11d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObject.MeetingSchedulePage.selectExperienceCentre(MeetingSchedulePage.java:72)
+	at pageObject.MeetingSchedulePage.scheduleMeeting(MeetingSchedulePage.java:236)
+	at tests.BannerSignInTest.bannerPageSignInTest(BannerSignInTest.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-12-11 11:07:36.349 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 11:07:36.380 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 11:07:36.380 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 11:07:40.274 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 11:07:40.305 [main] INFO  tests.BannerSignInTest - Current URL: https://website-preprod.homelane.com/
+2025-12-11 11:07:40.334 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 11:07:40.343 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 11:07:40.343 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 11:07:40.413 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 11:07:40.426 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 11:07:40.428 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 11:07:40.443 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 11:07:40.443 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 11:07:40.455 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 11:07:40.475 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6016637901
+2025-12-11 11:07:40.479 [main] INFO  tests.BannerSignInTest - Using phone number: 6016637901
+2025-12-11 11:07:40.479 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 11:07:40.479 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 11:07:40.479 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 11:07:41.438 [main] INFO  pageObject.BannerFormPage - Name entered successfully
+2025-12-11 11:07:41.438 [main] INFO  pageObject.BannerFormPage - Entering mobile number: 6016637901
+2025-12-11 11:07:42.254 [main] INFO  pageObject.BannerFormPage - Mobile number entered successfully
+2025-12-11 11:07:42.254 [main] INFO  pageObject.BannerFormPage - Selecting property location
+2025-12-11 11:07:42.882 [main] INFO  pageObject.BannerFormPage - Property location dropdown clicked
+2025-12-11 11:07:43.809 [main] INFO  pageObject.BannerFormPage - City option selected successfully
+2025-12-11 11:07:43.809 [main] INFO  pageObject.BannerFormPage - Clicking Book 3D Design Session button
+2025-12-11 11:07:44.353 [main] INFO  pageObject.BannerFormPage - Book session button clicked successfully
+2025-12-11 11:07:44.357 [main] INFO  pageObject.BannerFormPage - Entering OTP: 6633
+2025-12-11 11:07:46.599 [main] INFO  pageObject.BannerFormPage - OTP entered successfully
+2025-12-11 11:07:46.599 [main] INFO  pageObject.BannerFormPage - Clicking Submit button
+2025-12-11 11:07:47.079 [main] INFO  pageObject.BannerFormPage - Submit button clicked successfully
+2025-12-11 11:07:47.079 [main] INFO  pageObject.BannerFormPage - Banner form fill process completed
+2025-12-11 11:07:47.079 [main] INFO  tests.BannerSignInTest - Step 1: Banner form filled successfully
+2025-12-11 11:07:47.079 [main] INFO  tests.BannerSignInTest - Step 2: Filling property details
+2025-12-11 11:07:47.079 [main] INFO  pageObject.PropertyDetailsPage - Starting property details fill process
+2025-12-11 11:07:47.079 [main] INFO  pageObject.PropertyDetailsPage - Selecting Apartment option
+2025-12-11 11:08:13.469 [main] INFO  pageObject.PropertyDetailsPage - Apartment option selected successfully
+2025-12-11 11:08:13.469 [main] INFO  pageObject.PropertyDetailsPage - Selecting 2BHK option
+2025-12-11 11:08:13.931 [main] INFO  pageObject.PropertyDetailsPage - 2BHK option selected successfully
+2025-12-11 11:08:13.931 [main] INFO  pageObject.PropertyDetailsPage - Searching for property: TestYantra Software Solutions, Somajiguda, Hyderabad, Telangana, India
+2025-12-11 11:08:14.495 [main] INFO  pageObject.PropertyDetailsPage - Property search area clicked
+2025-12-11 11:08:17.148 [main] INFO  pageObject.PropertyDetailsPage - Property name entered in search box
+2025-12-11 11:08:19.520 [main] INFO  pageObject.PropertyDetailsPage - Property selected from search results
+2025-12-11 11:08:19.523 [main] INFO  pageObject.PropertyDetailsPage - Clicking Next button
+2025-12-11 11:08:19.973 [main] INFO  pageObject.PropertyDetailsPage - Next button clicked successfully
+2025-12-11 11:08:19.973 [main] INFO  pageObject.PropertyDetailsPage - Waiting for page transition (5 seconds)
+2025-12-11 11:08:24.976 [main] INFO  pageObject.PropertyDetailsPage - Page transition wait completed
+2025-12-11 11:08:24.976 [main] INFO  pageObject.PropertyDetailsPage - Property details fill process completed
+2025-12-11 11:08:24.976 [main] INFO  tests.BannerSignInTest - Step 2: Property details filled successfully
+2025-12-11 11:08:24.976 [main] INFO  tests.BannerSignInTest - Step 3: Filling planning options
+2025-12-11 11:08:24.976 [main] INFO  pageObject.PlanningOptionsPage - Starting planning options fill process
+2025-12-11 11:08:24.976 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'Rent Out' option
+2025-12-11 11:08:25.572 [main] INFO  pageObject.PlanningOptionsPage - 'Rent Out' option selected successfully
+2025-12-11 11:08:25.572 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'End-to-end Interiors' option
+2025-12-11 11:08:26.121 [main] INFO  pageObject.PlanningOptionsPage - 'End-to-end Interiors' option selected successfully
+2025-12-11 11:08:26.121 [main] INFO  pageObject.PlanningOptionsPage - Selecting budget option
+2025-12-11 11:08:26.598 [main] INFO  pageObject.PlanningOptionsPage - Budget dropdown clicked
+2025-12-11 11:08:27.187 [main] INFO  pageObject.PlanningOptionsPage - Budget option selected successfully
+2025-12-11 11:08:27.187 [main] INFO  pageObject.PlanningOptionsPage - Selecting possession option
+2025-12-11 11:08:27.704 [main] INFO  pageObject.PlanningOptionsPage - Possession dropdown clicked
+2025-12-11 11:08:28.268 [main] INFO  pageObject.PlanningOptionsPage - Possession option selected successfully
+2025-12-11 11:08:28.273 [main] INFO  pageObject.PlanningOptionsPage - Clicking Next button
+2025-12-11 11:08:28.697 [main] INFO  pageObject.PlanningOptionsPage - Next button clicked successfully
+2025-12-11 11:08:28.697 [main] INFO  pageObject.PlanningOptionsPage - Planning options fill process completed
+2025-12-11 11:08:28.697 [main] INFO  tests.BannerSignInTest - Step 3: Planning options filled successfully
+2025-12-11 11:08:28.697 [main] INFO  tests.BannerSignInTest - Step 4: Scheduling meeting
+2025-12-11 11:08:28.697 [main] INFO  utilis.Utilities - Generated tomorrow's date: 12-12-2025
+2025-12-11 11:08:28.697 [main] INFO  tests.BannerSignInTest - Using tomorrow's date: 12-12-2025
+2025-12-11 11:08:28.697 [main] INFO  pageObject.MeetingSchedulePage - Starting meeting scheduling process
+2025-12-11 11:08:28.697 [main] INFO  pageObject.MeetingSchedulePage - Selecting experience centre
+2025-12-11 11:08:38.948 [main] ERROR pageObject.MeetingSchedulePage - Failed to select experience centre: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (8f2f0c892d4e96248861296657fa3917)] -> xpath: //div[@class='BFC_flowSteps_internalTabs_cards__1KbHv']//div[@class='BFC_flowSteps_selectOption_section__32fyK'][1]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65048}, goog:processID: 22064, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65048/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f2f0c892d4e96248861296657fa3917
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (8f2f0c892d4e96248861296657fa3917)] -> xpath: //div[@class='BFC_flowSteps_internalTabs_cards__1KbHv']//div[@class='BFC_flowSteps_selectOption_section__32fyK'][1]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65048}, goog:processID: 22064, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65048/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f2f0c892d4e96248861296657fa3917
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObject.MeetingSchedulePage.selectExperienceCentre(MeetingSchedulePage.java:72)
+	at pageObject.MeetingSchedulePage.scheduleMeeting(MeetingSchedulePage.java:236)
+	at tests.BannerSignInTest.bannerPageSignInTest(BannerSignInTest.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2025-12-11 11:27:07.065 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 11:27:07.101 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 11:27:07.101 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 11:27:10.999 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 11:27:11.015 [main] INFO  tests.BannerSignInTest - Current URL: https://website-preprod.homelane.com/
+2025-12-11 11:27:11.042 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 11:27:11.050 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 11:27:11.052 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 11:27:11.102 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 11:27:11.112 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 11:27:11.121 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 11:27:11.129 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 11:27:11.129 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 11:27:11.135 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 11:27:11.159 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6066439859
+2025-12-11 11:27:11.161 [main] INFO  tests.BannerSignInTest - Using phone number: 6066439859
+2025-12-11 11:27:11.161 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 11:27:11.162 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 11:27:11.162 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 11:27:31.313 [main] ERROR pageObject.BannerFormPage - Failed to enter name: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: #bfc-form-container input[placeholder='Enter your name']' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: #bfc-form-container input[placeholder='Enter your name']' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObject.BannerFormPage.enterName(BannerFormPage.java:53)
+	at pageObject.BannerFormPage.fillBannerForm(BannerFormPage.java:130)
+	at tests.BannerSignInTest.bannerPageSignInTest(BannerSignInTest.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#bfc-form-container input[placeholder='Enter your name']"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [36136d594d6df55cd757b16d311d72cc, findElement {using=css selector, value=#bfc-form-container input[placeholder='Enter your name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55667}, goog:processID: 26764, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55667/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36136d594d6df55cd757b16d311d72cc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 common frames omitted
+2025-12-11 11:27:41.385 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 11:27:41.433 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 11:27:41.433 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 11:27:44.674 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 11:27:44.722 [main] INFO  tests.BannerSignInTest - Current URL: https://website-preprod.homelane.com/
+2025-12-11 11:27:44.748 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 11:27:44.752 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 11:27:44.752 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 11:27:44.841 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 11:27:44.854 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 11:27:44.860 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 11:27:44.865 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 11:27:44.865 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 11:27:44.865 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 11:27:44.896 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6054023720
+2025-12-11 11:27:44.896 [main] INFO  tests.BannerSignInTest - Using phone number: 6054023720
+2025-12-11 11:27:44.896 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 11:27:44.896 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 11:27:44.896 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 11:28:05.115 [main] ERROR pageObject.BannerFormPage - Failed to enter name: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: #bfc-form-container input[placeholder='Enter your name']' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: #bfc-form-container input[placeholder='Enter your name']' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObject.BannerFormPage.enterName(BannerFormPage.java:53)
+	at pageObject.BannerFormPage.fillBannerForm(BannerFormPage.java:130)
+	at tests.BannerSignInTest.bannerPageSignInTest(BannerSignInTest.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#bfc-form-container input[placeholder='Enter your name']"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e349d17d692abbe1306d6b3df4bde78, findElement {using=css selector, value=#bfc-form-container input[placeholder='Enter your name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62850}, goog:processID: 19296, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62850/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e349d17d692abbe1306d6b3df4bde78
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 common frames omitted
+2025-12-11 11:36:16.795 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 11:36:16.846 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 11:36:16.846 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 11:36:22.513 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 11:36:22.569 [main] INFO  tests.BannerSignInTest - Current URL: https://website-preprod.homelane.com/
+2025-12-11 11:36:22.631 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 11:36:22.635 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 11:36:22.635 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 11:36:22.739 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 11:36:22.761 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 11:36:22.771 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 11:36:22.785 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 11:36:22.790 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 11:36:22.801 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 11:36:22.837 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6051956369
+2025-12-11 11:36:22.837 [main] INFO  tests.BannerSignInTest - Using phone number: 6051956369
+2025-12-11 11:36:22.839 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 11:36:22.839 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 11:36:22.839 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 11:36:43.031 [main] ERROR pageObject.BannerFormPage - Failed to enter name: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: #bfc-form-container input[placeholder='Enter your name']' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: #bfc-form-container input[placeholder='Enter your name']' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObject.BannerFormPage.enterName(BannerFormPage.java:53)
+	at pageObject.BannerFormPage.fillBannerForm(BannerFormPage.java:130)
+	at tests.BannerSignInTest.bannerPageSignInTest(BannerSignInTest.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#bfc-form-container input[placeholder='Enter your name']"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b8a39b1dff441131f970f9cfb296d289, findElement {value=#bfc-form-container input[placeholder='Enter your name'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62865}, goog:processID: 25660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62865/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b8a39b1dff441131f970f9cfb296d289
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 common frames omitted
+2025-12-11 11:42:16.865 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 11:42:16.907 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 11:42:16.907 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 11:42:21.068 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 11:42:21.087 [main] INFO  tests.BannerSignInTest - Current URL: https://website-preprod.homelane.com/
+2025-12-11 11:42:21.107 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 11:42:21.115 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 11:42:21.115 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 11:42:21.185 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 11:42:21.187 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 11:42:21.195 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 11:42:21.209 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 11:42:21.210 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 11:42:21.215 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 11:42:21.233 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6096571167
+2025-12-11 11:42:21.233 [main] INFO  tests.BannerSignInTest - Using phone number: 6096571167
+2025-12-11 11:42:21.234 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 11:42:21.234 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 11:42:21.234 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 11:42:22.239 [main] INFO  pageObject.BannerFormPage - Name entered successfully
+2025-12-11 11:42:22.239 [main] INFO  pageObject.BannerFormPage - Entering mobile number: 6096571167
+2025-12-11 11:42:23.125 [main] INFO  pageObject.BannerFormPage - Mobile number entered successfully
+2025-12-11 11:42:23.125 [main] INFO  pageObject.BannerFormPage - Selecting property location
+2025-12-11 11:42:23.795 [main] INFO  pageObject.BannerFormPage - Property location dropdown clicked
+2025-12-11 11:42:24.849 [main] INFO  pageObject.BannerFormPage - City option selected successfully
+2025-12-11 11:42:24.855 [main] INFO  pageObject.BannerFormPage - Clicking Book 3D Design Session button
+2025-12-11 11:42:25.385 [main] INFO  pageObject.BannerFormPage - Book session button clicked successfully
+2025-12-11 11:42:25.391 [main] INFO  pageObject.BannerFormPage - Entering OTP: 6633
+2025-12-11 11:42:27.801 [main] INFO  pageObject.BannerFormPage - OTP entered successfully
+2025-12-11 11:42:27.804 [main] INFO  pageObject.BannerFormPage - Clicking Submit button
+2025-12-11 11:42:28.265 [main] INFO  pageObject.BannerFormPage - Submit button clicked successfully
+2025-12-11 11:42:28.265 [main] INFO  pageObject.BannerFormPage - Banner form fill process completed
+2025-12-11 11:42:28.265 [main] INFO  tests.BannerSignInTest - Step 1: Banner form filled successfully
+2025-12-11 11:42:28.265 [main] INFO  tests.BannerSignInTest - Step 2: Filling property details
+2025-12-11 11:42:28.265 [main] INFO  pageObject.PropertyDetailsPage - Starting property details fill process
+2025-12-11 11:42:28.265 [main] INFO  pageObject.PropertyDetailsPage - Selecting Apartment option
+2025-12-11 11:42:54.751 [main] INFO  pageObject.PropertyDetailsPage - Apartment option selected successfully
+2025-12-11 11:42:54.753 [main] INFO  pageObject.PropertyDetailsPage - Selecting 2BHK option
+2025-12-11 11:42:55.279 [main] INFO  pageObject.PropertyDetailsPage - 2BHK option selected successfully
+2025-12-11 11:42:55.279 [main] INFO  pageObject.PropertyDetailsPage - Searching for property: TestYantra Software Solutions, Somajiguda, Hyderabad, Telangana, India
+2025-12-11 11:42:55.733 [main] INFO  pageObject.PropertyDetailsPage - Property search area clicked
+2025-12-11 11:42:58.408 [main] INFO  pageObject.PropertyDetailsPage - Property name entered in search box
+2025-12-11 11:43:00.666 [main] INFO  pageObject.PropertyDetailsPage - Property selected from search results
+2025-12-11 11:43:00.666 [main] INFO  pageObject.PropertyDetailsPage - Clicking Next button
+2025-12-11 11:43:01.671 [main] INFO  pageObject.PropertyDetailsPage - Next button clicked successfully
+2025-12-11 11:43:01.671 [main] INFO  pageObject.PropertyDetailsPage - Waiting for page transition (5 seconds)
+2025-12-11 11:43:06.689 [main] INFO  pageObject.PropertyDetailsPage - Page transition wait completed
+2025-12-11 11:43:06.689 [main] INFO  pageObject.PropertyDetailsPage - Property details fill process completed
+2025-12-11 11:43:06.689 [main] INFO  tests.BannerSignInTest - Step 2: Property details filled successfully
+2025-12-11 11:43:06.689 [main] INFO  tests.BannerSignInTest - Step 3: Filling planning options
+2025-12-11 11:43:06.689 [main] INFO  pageObject.PlanningOptionsPage - Starting planning options fill process
+2025-12-11 11:43:06.689 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'Rent Out' option
+2025-12-11 11:43:07.345 [main] INFO  pageObject.PlanningOptionsPage - 'Rent Out' option selected successfully
+2025-12-11 11:43:07.347 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'End-to-end Interiors' option
+2025-12-11 11:43:07.999 [main] INFO  pageObject.PlanningOptionsPage - 'End-to-end Interiors' option selected successfully
+2025-12-11 11:43:08.003 [main] INFO  pageObject.PlanningOptionsPage - Selecting budget option
+2025-12-11 11:43:08.536 [main] INFO  pageObject.PlanningOptionsPage - Budget dropdown clicked
+2025-12-11 11:43:09.147 [main] INFO  pageObject.PlanningOptionsPage - Budget option selected successfully
+2025-12-11 11:43:09.151 [main] INFO  pageObject.PlanningOptionsPage - Selecting possession option
+2025-12-11 11:43:09.640 [main] INFO  pageObject.PlanningOptionsPage - Possession dropdown clicked
+2025-12-11 11:43:10.203 [main] INFO  pageObject.PlanningOptionsPage - Possession option selected successfully
+2025-12-11 11:43:10.203 [main] INFO  pageObject.PlanningOptionsPage - Clicking Next button
+2025-12-11 11:43:10.686 [main] INFO  pageObject.PlanningOptionsPage - Next button clicked successfully
+2025-12-11 11:43:10.686 [main] INFO  pageObject.PlanningOptionsPage - Planning options fill process completed
+2025-12-11 11:43:10.686 [main] INFO  tests.BannerSignInTest - Step 3: Planning options filled successfully
+2025-12-11 11:43:10.686 [main] INFO  tests.BannerSignInTest - Step 4: Scheduling meeting
+2025-12-11 11:43:10.686 [main] INFO  utilis.Utilities - Generated tomorrow's date: 12-12-2025
+2025-12-11 11:43:10.686 [main] INFO  tests.BannerSignInTest - Using tomorrow's date: 12-12-2025
+2025-12-11 11:43:10.686 [main] INFO  pageObject.MeetingSchedulePage - Starting meeting scheduling process
+2025-12-11 11:43:10.689 [main] INFO  pageObject.MeetingSchedulePage - Selecting experience centre
+2025-12-11 11:43:11.687 [main] INFO  pageObject.MeetingSchedulePage - Experience centre dropdown clicked
+2025-12-11 11:43:12.060 [main] INFO  pageObject.MeetingSchedulePage - Experience centre option selected successfully
+2025-12-11 11:43:12.065 [main] INFO  pageObject.MeetingSchedulePage - Selecting date: 12-12-2025
+2025-12-11 11:43:23.312 [main] INFO  pageObject.MeetingSchedulePage - Loader disappeared
+2025-12-11 11:43:23.881 [main] INFO  pageObject.MeetingSchedulePage - Date dropdown clicked
+2025-12-11 11:43:25.887 [main] INFO  pageObject.MeetingSchedulePage - Waiting for datepicker calendar to load
+2025-12-11 11:43:25.895 [main] INFO  pageObject.MeetingSchedulePage - Looking for date: 12
+2025-12-11 11:43:25.955 [main] INFO  pageObject.MeetingSchedulePage - Strategy 1: Looking for aria-label: Choose Friday, December 12th, 2025
+2025-12-11 11:43:36.018 [main] WARN  pageObject.MeetingSchedulePage - Strategy 1 failed: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='react-datepicker__day' and @aria-label='Choose Friday, December 12th, 2025']"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8c2b3dca7b77796b76535bfc996df17, findElement {value=//div[@class='react-datepicker__day' and @aria-label='Choose Friday, December 12th, 2025'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49982}, goog:processID: 4260, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49982/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8c2b3dca7b77796b76535bfc996df17
+2025-12-11 11:43:36.018 [main] INFO  pageObject.MeetingSchedulePage - Strategy 2: Looking for date with XPath: //div[contains(@class, 'react-datepicker__day') and text()='12' and not(contains(@class, 'disabled'))]
+2025-12-11 11:43:36.165 [main] INFO  pageObject.MeetingSchedulePage - Found date using Strategy 2 (simple text match)
+2025-12-11 11:43:36.525 [main] INFO  pageObject.MeetingSchedulePage - Date selected successfully: 12-12-2025
+2025-12-11 11:43:38.035 [main] INFO  pageObject.MeetingSchedulePage - Waiting for time slots to load after date selection
+2025-12-11 11:43:38.036 [main] INFO  pageObject.MeetingSchedulePage - Selecting time slot
+2025-12-11 11:43:48.137 [main] INFO  pageObject.MeetingSchedulePage - Loader disappeared
+2025-12-11 11:43:48.705 [main] INFO  pageObject.MeetingSchedulePage - Time slot dropdown clicked
+2025-12-11 11:43:49.437 [main] INFO  pageObject.MeetingSchedulePage - Time slot selected successfully
+2025-12-11 11:43:49.437 [main] INFO  pageObject.MeetingSchedulePage - Clicking 'Book Free Design Session' button
+2025-12-11 11:43:50.031 [main] INFO  pageObject.MeetingSchedulePage - 'Book Free Design Session' button clicked successfully
+2025-12-11 11:43:50.031 [main] INFO  pageObject.MeetingSchedulePage - Waiting for final submission (5 seconds)
+2025-12-11 11:43:55.035 [main] INFO  pageObject.MeetingSchedulePage - Final submission wait completed
+2025-12-11 11:43:55.036 [main] INFO  pageObject.MeetingSchedulePage - Meeting scheduling process completed
+2025-12-11 11:43:55.036 [main] INFO  tests.BannerSignInTest - Step 4: Meeting scheduled successfully
+2025-12-11 11:43:55.036 [main] INFO  tests.BannerSignInTest - ✅ Banner Sign In Test completed successfully!
+2025-12-11 11:43:55.040 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Completed ----------
+2025-12-11 11:44:21.807 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ramat.hlc_homelane\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+2025-12-11 11:44:21.859 [main] INFO  tests.BannerSignInTest - ========== Starting Banner Sign In Test ==========
+2025-12-11 11:44:21.859 [main] INFO  tests.BannerSignInTest - Initializing WebDriver and navigating to application
+2025-12-11 11:44:25.667 [main] INFO  tests.BannerSignInTest - WebDriver initialized successfully
+2025-12-11 11:44:25.689 [main] INFO  tests.BannerSignInTest - Current URL: https://www.homelane.com/
+2025-12-11 11:44:25.715 [main] INFO  tests.BannerSignInTest - Page title: Best Interior Design Solutions in India | HomeLane
+2025-12-11 11:44:25.721 [main] INFO  tests.BannerSignInTest - Page title verification passed
+2025-12-11 11:44:25.721 [main] INFO  tests.BannerSignInTest - Initializing page objects
+2025-12-11 11:44:25.775 [main] INFO  pageObject.BannerFormPage - BannerFormPage initialized
+2025-12-11 11:44:25.791 [main] INFO  pageObject.PropertyDetailsPage - PropertyDetailsPage initialized
+2025-12-11 11:44:25.797 [main] INFO  pageObject.PlanningOptionsPage - PlanningOptionsPage initialized
+2025-12-11 11:44:25.805 [main] INFO  pageObject.MeetingSchedulePage - MeetingSchedulePage initialized
+2025-12-11 11:44:25.805 [main] INFO  tests.BannerSignInTest - All page objects initialized successfully
+2025-12-11 11:44:25.809 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Started ----------
+2025-12-11 11:44:25.825 [main] INFO  utilis.Utilities - Generated dynamic phone number: 6051908915
+2025-12-11 11:44:25.825 [main] INFO  tests.BannerSignInTest - Using phone number: 6051908915
+2025-12-11 11:44:25.825 [main] INFO  tests.BannerSignInTest - Step 1: Filling banner form with user details
+2025-12-11 11:44:25.825 [main] INFO  pageObject.BannerFormPage - Starting banner form fill process
+2025-12-11 11:44:25.825 [main] INFO  pageObject.BannerFormPage - Entering name: testrama
+2025-12-11 11:44:26.945 [main] INFO  pageObject.BannerFormPage - Name entered successfully
+2025-12-11 11:44:26.945 [main] INFO  pageObject.BannerFormPage - Entering mobile number: 6051908915
+2025-12-11 11:44:27.825 [main] INFO  pageObject.BannerFormPage - Mobile number entered successfully
+2025-12-11 11:44:27.825 [main] INFO  pageObject.BannerFormPage - Selecting property location
+2025-12-11 11:44:29.005 [main] INFO  pageObject.BannerFormPage - Property location dropdown clicked
+2025-12-11 11:44:29.576 [main] INFO  pageObject.BannerFormPage - City option selected successfully
+2025-12-11 11:44:29.576 [main] INFO  pageObject.BannerFormPage - Clicking Book 3D Design Session button
+2025-12-11 11:44:30.071 [main] INFO  pageObject.BannerFormPage - Book session button clicked successfully
+2025-12-11 11:44:30.075 [main] INFO  pageObject.BannerFormPage - Entering OTP: 3692
+2025-12-11 11:44:32.655 [main] INFO  pageObject.BannerFormPage - OTP entered successfully
+2025-12-11 11:44:32.655 [main] INFO  pageObject.BannerFormPage - Clicking Submit button
+2025-12-11 11:44:33.076 [main] INFO  pageObject.BannerFormPage - Submit button clicked successfully
+2025-12-11 11:44:33.076 [main] INFO  pageObject.BannerFormPage - Banner form fill process completed
+2025-12-11 11:44:33.076 [main] INFO  tests.BannerSignInTest - Step 1: Banner form filled successfully
+2025-12-11 11:44:33.076 [main] INFO  tests.BannerSignInTest - Step 2: Filling property details
+2025-12-11 11:44:33.076 [main] INFO  pageObject.PropertyDetailsPage - Starting property details fill process
+2025-12-11 11:44:33.076 [main] INFO  pageObject.PropertyDetailsPage - Selecting Apartment option
+2025-12-11 11:44:39.649 [main] INFO  pageObject.PropertyDetailsPage - Apartment option selected successfully
+2025-12-11 11:44:39.649 [main] INFO  pageObject.PropertyDetailsPage - Selecting 2BHK option
+2025-12-11 11:44:40.445 [main] INFO  pageObject.PropertyDetailsPage - 2BHK option selected successfully
+2025-12-11 11:44:40.445 [main] INFO  pageObject.PropertyDetailsPage - Searching for property: TestYantra Software Solutions, Somajiguda, Hyderabad, Telangana, India
+2025-12-11 11:44:40.971 [main] INFO  pageObject.PropertyDetailsPage - Property search area clicked
+2025-12-11 11:44:43.777 [main] INFO  pageObject.PropertyDetailsPage - Property name entered in search box
+2025-12-11 11:44:46.261 [main] INFO  pageObject.PropertyDetailsPage - Property selected from search results
+2025-12-11 11:44:46.263 [main] INFO  pageObject.PropertyDetailsPage - Clicking Next button
+2025-12-11 11:44:46.857 [main] INFO  pageObject.PropertyDetailsPage - Next button clicked successfully
+2025-12-11 11:44:46.857 [main] INFO  pageObject.PropertyDetailsPage - Waiting for page transition (5 seconds)
+2025-12-11 11:44:51.872 [main] INFO  pageObject.PropertyDetailsPage - Page transition wait completed
+2025-12-11 11:44:51.875 [main] INFO  pageObject.PropertyDetailsPage - Property details fill process completed
+2025-12-11 11:44:51.875 [main] INFO  tests.BannerSignInTest - Step 2: Property details filled successfully
+2025-12-11 11:44:51.875 [main] INFO  tests.BannerSignInTest - Step 3: Filling planning options
+2025-12-11 11:44:51.875 [main] INFO  pageObject.PlanningOptionsPage - Starting planning options fill process
+2025-12-11 11:44:51.875 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'Rent Out' option
+2025-12-11 11:44:52.461 [main] INFO  pageObject.PlanningOptionsPage - 'Rent Out' option selected successfully
+2025-12-11 11:44:52.461 [main] INFO  pageObject.PlanningOptionsPage - Selecting 'End-to-end Interiors' option
+2025-12-11 11:44:53.095 [main] INFO  pageObject.PlanningOptionsPage - 'End-to-end Interiors' option selected successfully
+2025-12-11 11:44:53.095 [main] INFO  pageObject.PlanningOptionsPage - Selecting budget option
+2025-12-11 11:44:53.595 [main] INFO  pageObject.PlanningOptionsPage - Budget dropdown clicked
+2025-12-11 11:44:54.295 [main] INFO  pageObject.PlanningOptionsPage - Budget option selected successfully
+2025-12-11 11:44:54.300 [main] INFO  pageObject.PlanningOptionsPage - Selecting possession option
+2025-12-11 11:44:54.787 [main] INFO  pageObject.PlanningOptionsPage - Possession dropdown clicked
+2025-12-11 11:44:55.369 [main] INFO  pageObject.PlanningOptionsPage - Possession option selected successfully
+2025-12-11 11:44:55.369 [main] INFO  pageObject.PlanningOptionsPage - Clicking Next button
+2025-12-11 11:44:55.805 [main] INFO  pageObject.PlanningOptionsPage - Next button clicked successfully
+2025-12-11 11:44:55.805 [main] INFO  pageObject.PlanningOptionsPage - Planning options fill process completed
+2025-12-11 11:44:55.805 [main] INFO  tests.BannerSignInTest - Step 3: Planning options filled successfully
+2025-12-11 11:44:55.805 [main] INFO  tests.BannerSignInTest - Step 4: Scheduling meeting
+2025-12-11 11:44:55.810 [main] INFO  utilis.Utilities - Generated tomorrow's date: 12-12-2025
+2025-12-11 11:44:55.810 [main] INFO  tests.BannerSignInTest - Using tomorrow's date: 12-12-2025
+2025-12-11 11:44:55.811 [main] INFO  pageObject.MeetingSchedulePage - Starting meeting scheduling process
+2025-12-11 11:44:55.811 [main] INFO  pageObject.MeetingSchedulePage - Selecting experience centre
+2025-12-11 11:44:56.452 [main] INFO  pageObject.MeetingSchedulePage - Experience centre dropdown clicked
+2025-12-11 11:44:56.735 [main] INFO  pageObject.MeetingSchedulePage - Experience centre option selected successfully
+2025-12-11 11:44:56.737 [main] INFO  pageObject.MeetingSchedulePage - Selecting date: 12-12-2025
+2025-12-11 11:45:08.009 [main] INFO  pageObject.MeetingSchedulePage - Loader disappeared
+2025-12-11 11:45:08.555 [main] INFO  pageObject.MeetingSchedulePage - Date dropdown clicked
+2025-12-11 11:45:10.562 [main] INFO  pageObject.MeetingSchedulePage - Waiting for datepicker calendar to load
+2025-12-11 11:45:10.565 [main] INFO  pageObject.MeetingSchedulePage - Looking for date: 12
+2025-12-11 11:45:10.620 [main] INFO  pageObject.MeetingSchedulePage - Strategy 1: Looking for aria-label: Choose Friday, December 12th, 2025
+2025-12-11 11:45:20.651 [main] WARN  pageObject.MeetingSchedulePage - Strategy 1 failed: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='react-datepicker__day' and @aria-label='Choose Friday, December 12th, 2025']"}
+  (Session info: chrome=143.0.7499.41)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [07660e2ad7ae1d748806b94cb4440a4a, findElement {value=//div[@class='react-datepicker__day' and @aria-label='Choose Friday, December 12th, 2025'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.41, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\RAMAT~1.HLC\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51327}, goog:processID: 26436, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51327/devtoo..., se:cdpVersion: 143.0.7499.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07660e2ad7ae1d748806b94cb4440a4a
+2025-12-11 11:45:20.651 [main] INFO  pageObject.MeetingSchedulePage - Strategy 2: Looking for date with XPath: //div[contains(@class, 'react-datepicker__day') and text()='12' and not(contains(@class, 'disabled'))]
+2025-12-11 11:45:20.765 [main] INFO  pageObject.MeetingSchedulePage - Found date using Strategy 2 (simple text match)
+2025-12-11 11:45:21.106 [main] INFO  pageObject.MeetingSchedulePage - Date selected successfully: 12-12-2025
+2025-12-11 11:45:22.615 [main] INFO  pageObject.MeetingSchedulePage - Waiting for time slots to load after date selection
+2025-12-11 11:45:22.615 [main] INFO  pageObject.MeetingSchedulePage - Selecting time slot
+2025-12-11 11:45:32.635 [main] INFO  pageObject.MeetingSchedulePage - Loader disappeared
+2025-12-11 11:45:32.779 [main] INFO  pageObject.MeetingSchedulePage - Time slot dropdown clicked
+2025-12-11 11:45:32.974 [main] INFO  pageObject.MeetingSchedulePage - Time slot selected successfully
+2025-12-11 11:45:32.974 [main] INFO  pageObject.MeetingSchedulePage - Clicking 'Book Free Design Session' button
+2025-12-11 11:45:33.257 [main] INFO  pageObject.MeetingSchedulePage - 'Book Free Design Session' button clicked successfully
+2025-12-11 11:45:33.257 [main] INFO  pageObject.MeetingSchedulePage - Waiting for final submission (5 seconds)
+2025-12-11 11:45:38.265 [main] INFO  pageObject.MeetingSchedulePage - Final submission wait completed
+2025-12-11 11:45:38.265 [main] INFO  pageObject.MeetingSchedulePage - Meeting scheduling process completed
+2025-12-11 11:45:38.265 [main] INFO  tests.BannerSignInTest - Step 4: Meeting scheduled successfully
+2025-12-11 11:45:38.265 [main] INFO  tests.BannerSignInTest - ✅ Banner Sign In Test completed successfully!
+2025-12-11 11:45:38.265 [main] INFO  tests.BannerSignInTest - ---------- Test Execution Completed ----------

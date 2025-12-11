@@ -63,12 +63,8 @@ public class BannerSignInTest extends BaseClass {
         logger.info("Using phone number: {}", phoneNumber);
 
         String customerName = dotenv.get("CUSTOMER_NAME");
-        String otp = dotenv.get("OTP");
-        if (env.toLowerCase().equals("preprod")) {
-            otp = dotenv.get("PREPROD_OTP");
-        } else if (env.toLowerCase().equals("prod")) {
-            otp = dotenv.get("PROD_OTP");
-        }
+        String otp = dotenv.get("SING_UP_OTP");
+        String showroomName = dotenv.get("SHOWROOM");
 
         // Step 1: Fill banner form with user details
         logger.info("Step 1: Filling banner form with user details");
@@ -90,7 +86,7 @@ public class BannerSignInTest extends BaseClass {
         logger.info("Step 4: Scheduling meeting");
         String tomorrowDate = utilis.Utilities.getTomorrowDate();
         logger.info("Using tomorrow's date: {}", tomorrowDate);
-        meetingSchedulePage.scheduleMeeting(tomorrowDate);
+        meetingSchedulePage.scheduleMeeting(tomorrowDate,showroomName);
         logger.info("Step 4: Meeting scheduled successfully");
 
         logger.info("✅ Banner Sign In Test completed successfully!");
@@ -98,15 +94,15 @@ public class BannerSignInTest extends BaseClass {
 
     }
 
-    @AfterMethod
-    public void tearDown() {
-        logger.info("Cleaning up and closing browser");
-        try {
-            closeDriver();
-            logger.info("Browser closed successfully");
-        } catch (Exception e) {
-            logger.error("Error during teardown: {}", e.getMessage(), e);
-        }
-        logger.info("========== Test Execution Ended ==========\n");
-    }
+//    @AfterMethod
+//    public void tearDown() {
+//        logger.info("Cleaning up and closing browser");
+//        try {
+//            closeDriver();
+//            logger.info("Browser closed successfully");
+//        } catch (Exception e) {
+//            logger.error("Error during teardown: {}", e.getMessage(), e);
+//        }
+//        logger.info("========== Test Execution Ended ==========\n");
+//    }
 }

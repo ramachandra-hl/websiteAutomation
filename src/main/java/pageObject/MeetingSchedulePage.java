@@ -15,6 +15,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
+import static configurator.BaseClass.envName;
+
 public class MeetingSchedulePage {
 
     private static final Logger logger = LoggerFactory.getLogger(MeetingSchedulePage.class);
@@ -23,10 +25,14 @@ public class MeetingSchedulePage {
 
     // Locators using @FindBy
     @FindBy(xpath = "//div[@class='BFC_flowSteps_selectOption_section__32fyK' and contains(., 'Select Experience Centre')]")
-    WebElement experienceCentreDropdown;
+    WebElement experienceCentreDropdownPreProd;
+    //HomeLane Adityapur
 
-    @FindBy(xpath = "//ul[@class='BFC_flowSteps_dropdown_lists__1W_Cc']//li[@class='BFC_flowSteps_dropdown_options__3h23k ' and contains(text(), 'Test Showroom Bangalore - Electronic City')]")
-    WebElement experienceCentreOption;
+    @FindBy(xpath = "//div[@class='BFC_flowSteps_selectOption_section__32fyK' and contains(., 'Adityapur')]")
+    WebElement experienceCentreDropdownProd;
+
+//    @FindBy(xpath = "//ul[@class='BFC_flowSteps_dropdown_lists__1W_Cc']//li[@class='BFC_flowSteps_dropdown_options__3h23k ' and contains(text(), 'Test Showroom Bangalore - Electronic City')]")
+//    WebElement experienceCentreOption;
 
     @FindBy(xpath = "//div[@class='BFC_flowSteps_selectMeeting_dateAndTime__3-mtW ']//p[@class = 'BFC_flowSteps_selectType_text__1GfhV' and contains(text(), 'Select date')] ")
     WebElement selectDateDropdown;
@@ -62,13 +68,17 @@ public class MeetingSchedulePage {
     }
 
     // Page Actions
-    public void selectExperienceCentre() {
+    public void selectExperienceCentre(String showroomName) {
         try {
             logger.info("Selecting experience centre");
-            wait.until(ExpectedConditions.elementToBeClickable(experienceCentreDropdown)).click();
+            if (envName.equalsIgnoreCase("prod")){
+                wait.until(ExpectedConditions.elementToBeClickable(experienceCentreDropdownProd)).click();
+            }else{
+                wait.until(ExpectedConditions.elementToBeClickable(experienceCentreDropdownPreProd)).click();
+            }
             logger.info("Experience centre dropdown clicked");
-
-            wait.until(ExpectedConditions.elementToBeClickable(experienceCentreOption)).click();
+           String experienceCentreOption = "//ul[@class='BFC_flowSteps_dropdown_lists__1W_Cc']//li[@class='BFC_flowSteps_dropdown_options__3h23k ' and contains(text(), '"+showroomName+"')]";
+            wait.until(ExpectedConditions.elementToBeClickable( driver.findElement(By.xpath(experienceCentreOption)))).click();
             logger.info("Experience centre option selected successfully");
         } catch (Exception e) {
             logger.error("Failed to select experience centre: {}", e.getMessage(), e);
@@ -227,9 +237,9 @@ public class MeetingSchedulePage {
     }
 
     // Complete flow method
-    public void scheduleMeeting(String date) {
+    public void scheduleMeeting(String date, String showroomName) {
         logger.info("Starting meeting scheduling process");
-        selectExperienceCentre();
+        selectExperienceCentre(showroomName);
         selectDate(date);
         selectTimeSlot();
         clickBookFreeDesignSession();

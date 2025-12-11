@@ -5,32 +5,40 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class BaseClass {
 
     public WebDriver driver;
-    public String env;
+    public static String envName;
     public String url;
-    public static final Dotenv dotenv = Dotenv.configure().ignoreIfMissing().load();
+    public static final Dotenv dotenv = loadDotenv();
+
+    private static Dotenv loadDotenv() {
+        Dotenv base = Dotenv.configure().ignoreIfMissing().load();
+        envName = "prod";
+        String filename = envName.equals("prod") ? ".env.prod" : ".env.preprod";
+
+        try {
+            if (Files.exists(Paths.get(filename))) {
+                return Dotenv.configure().ignoreIfMissing().filename(filename).load();
+            }
+        } catch (Exception ignored) {}
+
+        return base;
+    }
 
     public void initializeDriver() {
-        env = dotenv.get("ENVIRONMENT", "preProd");
 
-        switch (env.toLowerCase()) {
-            case "preprod":
-                url = dotenv.get("PREPROD_URL");
-                break;
+        url = dotenv.get("URL");
 
-            case "prod":
-                url = dotenv.get("PROD_URL");
-                break;
-
-            default:
-                throw new RuntimeException("❌ Invalid ENVIRONMENT: " + env);
+        if (url == null || url.isEmpty()) {
+          url = dotenv.get("URL");
         }
 
         if (url == null || url.isEmpty()) {
-            throw new RuntimeException("❌ URL is missing in .env file for ENVIRONMENT = " + env);
+            throw new RuntimeException("❌ URL is missing. Define 'URL' in the selected env file or legacy 'PREPROD_URL/PROD_URL'. ENVIRONMENT = " + envName);
         }
 
         driver = new ChromeDriver();
